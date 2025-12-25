@@ -1,0 +1,87 @@
+/* .enq-heading{
+  padding-top: "120px";
+} */
+
+.enquiry-form-wrapper {
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+
+
+
+@media (max-width: 1024px) {
+  /* .enquire-btn {
+    width: 250px !important;
+} */
+
+.enquire-btn {
+  width: 100% !important; /* Or 250px, or auto depending on your form layout */
+  max-width: 250px;
+  padding-left: 10px;
+  padding-right: 10px;
+  display: block;
+  margin: 0 auto; /* center if needed */
+}
+
+
+
+.mobileno::placeholder {
+  font-size: 16px; /* or any desired size */
+}
+
+/* .enq-heading{
+  padding-top: "-60px";
+} */
+}
+
+@media (max-width: 1024px) and (min-width: 992px) {
+  .enquire-btn {
+    width: 150px; /* or whatever smaller width you want */
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
+
+
+@media (max-width: 768px) {
+  .enq-heading {
+    padding-top: 120px !important; 
+  }
+
+  .enq-text-muted{
+    text-align: justify;
+  }
+
+  .text-danger{
+    text-align: left;
+  } 
+}
+
+@media (max-width: 425px) {
+  .enq-heading {
+    padding-top: 65px !important; 
+  }
+}
+
+
+@media (min-width: 375px) {
+  .enq-heading {
+    padding-top: 120px !important; /* Adjust value as needed */
+  }
+}
+
+@media (min-width: 320px) {
+  .enq-heading {
+    padding-top: 120px !important;
+  }
+}
+
+
+.enquiry-section{
+  background-color: white;
+}
+

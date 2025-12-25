@@ -1,0 +1,33 @@
+/* .accordion-button::after {
+
+  margin-top: 100px;
+
+} */
+
+
+.accordion-button {
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+
+.accordion-item {
+  margin-bottom: 0.5rem; /* controls vertical spacing between sections */
+  border: none;
+  /* border-bottom: 1px solid #ddd;  */
+}
+
+
+.accordion-button:focus {
+  box-shadow: none !important;
+  background-color: transparent !important;
+  outline: none !important;
+}
+
+
+
+/* .img-fluid {
+  width: 100%;
+  margin-left: -10px;
+} */
+
+

@@ -1,0 +1,161 @@
+.admin-blog-container {
+  background-color: #f9f9f9; /* Set background for the entire container */
+  min-height: 100vh; /* Ensure the container takes full height */
+  display: flex;
+  width: 100%;
+}
+
+/* Sidebar styling */
+.sidebar {
+  background-color: #f0f0f0; /* Sidebar background color */
+  height: 100vh; /* Sidebar should occupy full screen height */
+  width: 250px; /* You can adjust the width as needed */
+  position: fixed; /* Make sidebar fixed to the left */
+  top: 0;
+  left: 0;
+  padding-top: 20px; /* Adjust the padding */
+  padding-left: 20px; /* Adjust padding for spacing */
+  padding-right: 20px; /* Adjust padding for spacing */
+  z-index: 100; /* Keep the sidebar above the content */
+}
+
+.sidebar .logo img {
+  max-width: 100%;
+  margin-bottom: 20px;
+}
+
+.sidebar .nav-item {
+  padding: 10px;
+  cursor: pointer;
+  font-weight: 500;
+  color: #333;
+}
+
+.sidebar .nav-item.active {
+  background-color: #170645;
+  color: white;
+  border-radius: 5px;
+}
+
+.sidebar .nav-link {
+  color: #000 !important; /* Default color for inactive links (black) */
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  text-decoration: none;
+}
+
+.sidebar .nav-link:hover {
+  background-color: #f4f4f4;
+}
+
+/* Icon styling */
+.sidebar .sidebar-icon {
+  width: 20px; 
+  height: 20px; 
+  margin-right: 10px;
+  filter: grayscale(100%);
+  transition: all 0.3s ease;
+}
+
+.sidebar .nav-item.active .nav-link {
+  background-color: #170645;
+  color: white !important;
+}
+
+.sidebar .nav-item.active .sidebar-icon {
+  filter: grayscale(0%);
+  filter: brightness(0) invert(1);
+}
+
+.sidebar .nav-item .sidebar-icon {
+  filter: grayscale(100%);
+}
+
+.main-content {
+  padding: 30px;
+  margin-left: 250px; /* Offset the content so it doesn't overlap with the sidebar */
+  background-color: #fff; /* Right side background color */
+  flex-grow: 1; /* Make the main content fill the remaining space */
+  position: relative; 
+  
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  margin-top: 70px;
+}
+
+.add-blog-btn {
+  background-color: #170645;
+  border: none;
+}
+
+.table-controls {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 15px;
+}
+
+.search-bar {
+  max-width: 300px;
+}
+
+.blog-table th,
+.blog-table td {
+  vertical-align: middle;
+  text-align: center;
+}
+
+.blog-img {
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+.actions button {
+  margin: 0 5px;
+}
+
+.pagination-controls {
+  text-align: center;
+  font-size: 18px;
+  margin-top: 15px;
+}
+
+.profile-img {
+  position: absolute;
+  top: 20px; 
+  right: 20px;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+  cursor: pointer;
+}
+
+.blog-table thead th {
+  background-color: #170645 !important;
+  color: white !important;
+}
+
+.actions {
+  text-align: center;
+}
+
+.action-buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px; /* Space between icons */
+}
+
+.blog-img {
+  display: block;
+  margin: auto;
+  border-radius: 5px;
+}

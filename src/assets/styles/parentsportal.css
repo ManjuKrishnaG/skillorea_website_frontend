@@ -1,0 +1,116 @@
+.parentsfeature-section {
+  background-size: cover; /* Ensures the background image covers the section */
+  background-position: center; /* Centers the background */
+  background-repeat: no-repeat; 
+  max-height: 600px; 
+  display: flex;
+  align-items: center;
+  padding: 80px 0;
+  overflow-x: hidden!important;
+}
+
+.parents-right-image {
+  max-width: 70%; /* Reduce size while keeping it responsive */
+  height: auto;
+  max-height: 400px;
+  margin-top: 30px;
+  margin-bottom: -10px;
+}
+
+.top-image {
+  max-width: 60%;
+  height: auto;
+  margin-bottom: 20px;
+}
+
+
+.img-button {
+  cursor: pointer;
+  width: 150px;  /* Adjust size as needed */
+  height: auto;
+  transition: transform 0.2s ease-in-out;
+}
+
+.img-button:hover {
+  transform: scale(1.05); /* Slight zoom effect */
+}
+
+
+
+
+@media (max-width: 768px) {
+  .parentsfeature-section {
+    background-position: center top;
+    margin-top: 40px;
+  }
+
+  .text-content {
+    text-align: center;
+    margin-top: 30px; 
+   }
+
+  .top-image {
+    max-width: 70%; 
+  }
+
+  .parents-right-image {
+    max-width: 50%; 
+  }
+}
+
+
+
+@media (max-width: 575px) {
+
+  /* .top-image {
+    padding-top: 20px;
+    margin-bottom: -60px;
+  } */
+
+  .top-image {
+    margin-top: -20px;
+    margin-bottom: 20px; /* 🔁 Increase this value */
+  }
+
+  .text-content {
+    margin-top: 10px; /* 🔁 Add if needed */
+  }
+
+  
+
+}
+
+@media (max-width: 1024px) {
+  .parentsfeature-section {
+    
+    margin-top: 60px;
+  }
+
+}
+
+
+
+
+/* what is project guidance */
+
+.parentgrouped{
+  width: 60%;
+}
+
+
+/* why parents portal */
+
+.why-parents-portal .card {
+  transition: transform 0.3s ease;
+}
+.why-parents-portal .card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+.custom-shadow {
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25); /* Stronger than Bootstrap */
+  border-radius: 12px;
+}
+
+

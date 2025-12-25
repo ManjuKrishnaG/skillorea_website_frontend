@@ -1,0 +1,240 @@
+/* General Navbar Styles */
+.custom-navbar {
+  width: 100%;
+  height: 80px;
+  /* background-color: #170645 !important; */
+  background-color: #ffff !important;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1050;
+  border-bottom: 2px solid #FFFFFF33;
+  font-size: 15px;
+}
+
+/* Logo Styling */
+.logo {
+  width: 180px;
+  height: auto;
+}
+
+/* Navbar Container */
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Navbar Links - Ensure Centered Position */
+.navbar-links {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Custom Nav Links */
+.custom-nav-links {
+  display: flex;
+  gap: 30px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* Default Link Styling */
+.nav-link {
+  /* color: white !important; */
+  color: #575757 !important;
+  font-size: 16px;
+  font-weight: 500;
+  position: relative;
+  padding-bottom: 5px;
+  transition: all 0.3s ease-in-out;
+}
+
+/* Navbar Menu Hover Effects */
+.nav-link:hover {
+  color: #F48616 !important; /* Change text color on hover */
+  transform: scale(1.1); /* Slightly enlarge the text */
+  transition: color 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+/* Active Link Styling */
+.nav-link.active-link {
+  color: #20CB01 !important; /* Ensure active link also appears in green */
+  font-weight: bold;
+  font-size: 18px;
+}
+
+
+/* Active Link Underline */
+.nav-link.active-link::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 2px;
+  background-color: white;
+  transition: width 0.3s ease-in-out;
+}
+
+/* Login Button */
+.login-btn {
+  /* background-color: #2F52DF; */
+  background-color: #2CA008;
+  color: white;
+  font-size: 15px;
+  padding: 9px 27px;
+  text-align: center;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background 0.3s ease-in-out;
+}
+
+.login-btn:hover {
+  background-color: #2CA008 !important;
+  color: white !important;
+}
+
+/* Navbar Toggle Button */
+.navbar-toggler {
+  border: none;
+  background: transparent;
+  outline: none;
+}
+
+.navbar-toggler-icon {
+  filter: invert(1);
+}
+
+/* Small Screen Dropdown */
+.mobile-menu {
+  background: rgba(23, 6, 69, 0.95);
+  padding: 20px;
+  border-radius: 10px;
+  transition: all 0.5s ease-in-out;
+  position: absolute;
+  top: 80px;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  display: none;
+}
+
+/* Show Dropdown When Open */
+.mobile-menu.open {
+  display: block;
+}
+
+/* Responsive Fixes */
+@media (max-width: 1024px) {
+  .navbar-links {
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+  }
+
+  .custom-nav-links {
+    flex-direction: column;
+    gap: 10px;
+    text-align: center;
+  }
+
+  .nav-link {
+    font-size: 16px!important;
+    font-weight: 600;
+    padding: 10px;
+    display: block;
+  }
+
+  .login-btn {
+    width: 10%;
+    margin-top: 10px;
+  }
+}
+
+
+@media (max-width: 991px) {
+  .navbar-links {
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+  }
+
+  .custom-nav-links {
+    flex-direction: column;
+    gap: 20px;
+    text-align: center;
+  }
+
+  .nav-link {
+    font-size: 18px;
+    font-weight: 600;
+    padding: 10px;
+    display: block;
+  }
+
+  .login-btn {
+    width: 100%;
+    margin-top: 10px;
+  }
+}
+
+@media (max-width: 991px) {
+
+  .nav-link {
+    color: white!important;
+  }
+
+  .nav-link.active-link::after {
+    display: none;
+  }
+
+ 
+
+
+}
+
+
+
+.nav-item.dropdown:hover .dropdown-menu {
+  display: block;
+  
+}
+.dropdown-menu{
+  min-width: 200px;
+  font-size: 8px;
+  border-radius: 5px;
+  
+}
+
+.dropdown-menu .dropdown-item:hover {
+  color: #F48616;
+  background-color: transparent !important;
+}
+
+
+/* Global no-scroll class to disable background scroll */
+.no-scroll {
+  overflow: hidden;
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+}
+
+.mobile-menu.open {
+  display: block;
+  max-height: 90vh;
+  overflow-y: auto;
+}
+.no-scroll {
+  touch-action: none;
+}
+
+
+
+
+

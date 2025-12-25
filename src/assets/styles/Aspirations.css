@@ -1,0 +1,243 @@
+/* Section Styling */
+.aspirations-section {
+  padding: 50px 0;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+}
+
+/* Center the heading and hexagons */
+.aspirations-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  max-width: 1400px; /* Increased max width */
+  width: 100%;
+}
+
+/* Background for Aspiration Header */
+.aspiration-header {
+   /* Adjust padding to fit content properly */
+  text-align: center; /* Centers text */
+}
+
+/* Heading Styling */
+.aspiration-heading {
+  font-size: 20px;
+  font-weight: bold;
+  color: #20CB01;
+  margin-bottom: 10px;
+  display: inline-block;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  position: relative;
+  text-align: center;
+  /* background-image: url("../images/whystudysmart.png");
+  background-size: contain; 
+  background-position: right center; 
+  background-repeat: no-repeat;  */
+  padding: 10px 0px;
+  margin-bottom: -10px;
+  
+  
+}
+
+/* Highlighted Text */
+.aspiration-heading .highlight {
+  color: #070759;
+}
+
+/* Right Arrow */
+.aspiration-heading::after {
+  content: "";
+  width: 60px;
+  height: 10px;
+  background: url('../../assets/right-arrow.png') no-repeat center;
+  background-size: contain;
+  display: inline-block;
+}
+
+/* Hexagon Grid */
+.hexagon-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px; /* Reduced gap for better spacing */
+  text-align: center;
+  max-width: 1200px; /* Increased max width */
+  margin: 0 auto;
+}
+
+/* Hexagon Wrapper */
+.hexagon {
+  position: relative;
+  width: 280px;  /* Increased width */
+  height: 310px; /* Increased height */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+/* Hexagon Image */
+.hexagon img {
+  width: 100%;
+  max-width: 280px; /* Match new width */
+  height: auto;
+  filter: drop-shadow(5px 5px 10px rgba(0, 0, 0, 0.2));
+}
+
+/* Text inside Hexagon */
+.hex-content {
+  position: absolute;
+  top: 52%; /* Adjusted positioning */
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  width: 85%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Number Styling */
+.hex-content strong {
+  font-size: 26px;  /* Increased font size */
+  font-weight: bold;
+  /* color: #ff0;  */
+  color: #20CB01;
+  margin-bottom: 5px;
+}
+
+/* Description Styling */
+.hex-content p {
+  font-size: 11px;  /* Slightly bigger for better readability */
+  line-height: 1.4;
+  margin: 0;
+  color: white;
+  word-wrap: break-word; /* Prevents text overflow */
+  max-width: 100%;
+}
+
+/* Responsive Layout */
+@media (max-width: 992px) {
+  .aspiration-heading {
+    font-size: 30px;
+  }
+  .hexagon-container {
+    gap: 15px; /* Reduce gap further for tablets */
+  }
+  .hexagon {
+    width: 240px;
+    height: 270px;
+  }
+  .hex-content {
+    font-size: 13px;
+    top: 50%;
+  }
+}
+
+@media (max-width: 768px) {
+  .aspiration-heading {
+    font-size: 28px;
+    margin-left: 60px;
+  }
+  .hexagon-container {
+    gap: 12px;
+  }
+  .hexagon {
+    width: 240px;
+    height: 280px;
+  }
+  .hex-content {
+    font-size: 12px;
+    top: 50%;
+  }
+}
+
+
+@media (max-width: 1024px) {
+ 
+  .hexagon {
+    width: 230px;
+    height: 230px;
+  }
+
+  .hexagon-container {
+    gap: 0px;
+  }
+  
+}
+
+@media (max-width: 768px) {
+
+  .aspiration-heading {
+    font-size: 20px;
+  }
+ 
+  .hexagon {
+    width: 250px;
+    height: 250px;
+  }
+
+  .hexagon-container {
+    gap: 0px;
+  }
+  
+}
+
+@media (max-width: 576px) {
+  .aspiration-heading {
+    font-size: 20px;
+    flex-direction: column;
+    margin-left: 30px;
+    background-size: 90%;
+  }
+  .hexagon-container {
+    gap: 5px;
+  }
+  .hexagon {
+    width: 240px;
+    height: 240px;
+  }
+  .hex-content {
+    font-size: 11px;
+    top: 48%;
+  }
+}
+
+
+@media (max-width: 320px) {
+  .aspiration-heading {
+    font-size: 20px;
+    flex-direction: column;
+    margin-left: 10px;
+    background-size: 90%;
+    
+  }
+
+  .aspiration-heading .highlight {
+    margin-left: 60px;
+  }
+
+}
+
+
+@media (min-width: 375px) {
+  .aspiration-heading {
+    font-size: 20px;
+    flex-direction: column;
+    margin-left: 20px;
+    background-size: 90%;
+    
+  }
+}
+
+@media (min-width: 425px) {
+  .aspiration-heading {
+    margin-left: 40px;
+  }
+
+}

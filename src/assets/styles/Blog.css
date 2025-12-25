@@ -1,0 +1,197 @@
+.blog-section {
+  text-align: center;
+  position: relative;
+  padding: 20px 50px 90px 50px;
+  background-color: white;
+}
+
+.blog-heading {
+  font-size: 20px;
+  font-weight: bold;
+  color: #6A6969;
+  margin-bottom: 30px;
+  text-align: center;
+  margin-top: 30px;
+  padding: 10px 30px;
+  /* background-image: url("../images/whystudysmart.png"); 
+  background-size: contain; 
+  background-repeat: no-repeat; 
+  background-position: right center;  */
+  display: inline-block;
+}
+
+.blog-heading .highlight{
+  color: #070759;
+}
+
+.blog-card {
+  background: white;
+  border-radius: 10px;
+  border: 2px solid #ddd; /* Add a slightly darker border */
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.15); /* Stronger shadow effect */
+  padding: 20px;
+  text-align: center;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+/* Hover Effect */
+.blog-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.25); /* Darker shadow on hover */
+}
+
+
+.blog-content {
+  margin-top: 15px;
+  font-size: 14px;
+}
+
+.blog-link {
+  color: #007bff;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.blog-link:hover {
+  text-decoration: underline;
+}
+
+/* Carousel Container */
+.carousel {
+  padding: 0 50px;
+}
+
+/* Carousel Controls */
+.carousel-control-prev, .carousel-control-next {
+  width: 5%;
+}
+
+.carousel-control-prev-icon, .carousel-control-next-icon {
+  background-color: #070759 !important; 
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  
+}
+
+.carousel-control-prev-icon{
+  margin-left: -20px;
+}
+
+
+.carousel-control-next-icon{
+  margin-left: 20px;
+ 
+  
+}
+
+
+
+/* add styles */
+
+.blog-card {
+  background: white;
+  border-radius: 10px;
+  border: 2px solid #ddd;
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.15);
+  padding: 20px;
+  text-align: center;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  height: 100%; /* Ensures uniform height */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.blog-card img {
+  max-width: 100%;
+  height: 180px; /* Fixed image size */
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+/* .truncate-text {
+  display: -webkit-box;
+  -webkit-line-clamp: 4; 
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+} */
+
+.blog-content {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.blog-link {
+  color: #007bff;
+  font-weight: bold;
+  text-decoration: none;
+  margin-top: auto; /* Pushes link to the bottom */
+}
+
+.blog-link:hover {
+  text-decoration: underline;
+}
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+
+  .img-fluid {
+    width: 80%;
+    margin-left: 20px;
+  }
+
+  .blog-card {
+    padding: 15px;
+    width: 200px;
+  }
+
+  .blog-card img {
+    height: auto !important;
+  }
+  .carousel {
+
+    padding: 0 30px; /* Less padding for mobile */
+  }
+
+  .carousel-control-prev, .carousel-control-next {
+    width: 20%; 
+    
+  }
+
+  .carousel-control-next {
+    padding-left: 20px;
+    
+  }
+
+  /* .blog-card img {
+    max-width: 100%;
+    height: auto;
+  }   */
+
+  .blog-heading {
+    margin-top: -10px !important;
+  }
+
+  .blog-section {
+    
+    margin-top: -100px;
+    margin-bottom: -90px;
+}
+
+
+}
+
+
+.carousel-item .row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: stretch;
+}
+
+
+

@@ -1,0 +1,211 @@
+/* Footer container */
+/* Ensure full-width footer */
+.footer {
+  width: 100vw;  /* Use viewport width to ensure full width */
+  background-color: #170645; 
+  color: white;
+  text-align: left;
+  padding: 65px 5%; /* Adjust padding instead of relying on .container */
+}
+
+/* Footer content should be centered but not constrained */
+.footer-content {
+  max-width: 1200px; /* Keeps it looking good on large screens */
+  margin: 0 auto; /* Centers it */
+}
+/* Footer headings */
+.footer-heading {
+  font-size: 18px; /* Increase heading size */
+  font-weight: bold; /* Ensure headings are bold */
+  margin-bottom: 12px; /* Space between heading and items */
+}
+
+/* Footer text and menu items */
+.footer-text,
+.footer-menu li {
+  font-size: 14px; /* Reduce font size for better proportion */
+  font-weight: normal; /* Ensure text below heading is NOT bold */
+  line-height: 1.8; /* Increase spacing for better readability */
+  list-style: none; /* Remove bullet points if using <li> */
+}
+
+/* Ensure menu items have spacing */
+.footer-menu {
+  padding: 0;
+  margin: 0;
+  
+  
+}
+
+.footer-menu a {
+  color: white;
+  text-decoration: none;
+  transition: color 0.3s;
+  font-size: 16px; /* Adjust font size */
+  line-height: 1.8; /* Increase line spacing */
+  position: relative;
+  font-weight: normal;
+}
+
+.footer-logo{
+  margin-top: -10px;
+  margin-bottom: 20px;
+}
+
+.footer-logo-img{
+  width: 200px;
+}
+
+/* Custom White Underline on Hover */
+.footer-menu a::after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 2px; /* Thickness of the underline */
+  background: white; /* White underline */
+  transition: width 0.3s ease-in-out;
+  position: absolute;
+  bottom: -3px; /* Position it just below the text */
+  left: 0;
+}
+
+.footer-menu a:hover::after {
+  width: 100%; /* Expand underline on hover */
+}
+
+/* Newsletter input box */
+.footer-newsletter input {
+  width: 100%;
+  padding: 8px;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+}
+
+/* Subscribe button */
+.footer-newsletter button {
+  background-color: #007bff;
+  color: white;
+  padding: 8px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* Social icons */
+.footer-social-icons {
+  display: flex;
+  gap: 15px;
+  justify-content: left;
+}
+
+.footer-social-icons i {
+  font-size: 18px;
+  color: white;
+  transition: transform 0.3s;
+  /* transition: color 0.3s ease-in-out; */
+}
+
+.footer-social-icons i:hover {
+  transform: scale(1.1);
+  color: #F48616;
+}
+
+
+
+
+.footer-menu li a {
+  color: white; /* Default link color */
+  text-decoration: none;
+  transition: color 0.3s ease-in-out;
+}
+
+.footer-menu li a:hover {
+  color: #F48616; /* Hover color */
+}
+
+/* Responsive adjustments */
+@media (max-width: 1024px) {
+.gap-3 {
+  margin-top: 70px;
+  gap: 1rem !important;
+}
+
+.newsletter {
+  margin-top: 10px;
+}
+
+.newsletter {
+  font-size: 16px; /* reduce from default h5 size */
+  margin-bottom: 8px;
+}
+
+.input-group input.form-control {
+  font-size: 10px;
+  padding: 10px 12px;
+  flex: 1 1 auto;
+  min-width: 0;
+}
+
+.input-group button.btn {
+  font-size: 12px;
+  padding: 10px 16px;
+}
+
+
+}
+
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .footer {
+    text-align: center; /* Center content on smaller screens */
+  }
+  .footer-social-icons {
+    justify-content: center;
+  }
+  .footer-logo-img{
+    width:200px;
+  }
+
+  .gap-3 {
+    margin-top: 70px;
+    gap: 1rem !important;
+  }
+
+  .footer-menu a {
+    font-size: 12px;
+
+  }
+
+  .footer-menu-labels{
+    text-align: left;
+  }
+
+  .input-group input.form-control {
+    font-size: 9px;
+    padding: 8px 2px;
+    flex: 1 1 auto;
+    min-width: 0;
+  }
+  
+  .input-group button.btn {
+    font-size: 9px;
+    padding: 5px 5px;
+  }
+
+
+
+
+  /* .footer-text,
+.footer-menu li {
+  text-align: left;
+} */
+}
+
+@media (max-width: 576px) {
+  .footer-heading{
+    margin-top:10px;
+  }
+}
+

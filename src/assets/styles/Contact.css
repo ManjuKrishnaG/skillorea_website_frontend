@@ -1,0 +1,312 @@
+/* Center the entire contact section */
+/* .contact-section {
+  padding: 120px 20px 80px; 
+  background-color: #f8f9fc;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+  position: relative; 
+} */
+
+
+
+.contact-section {
+  padding: 120px 20px 80px;
+  background-image: url("../../assets/images/pricingbg1.jpg"); /* Path to your image */
+  background-size: cover; /* Ensures image covers the entire section */
+  background-position: top right; /* Centers the image */
+  background-repeat: no-repeat; /* Prevents tiling */
+  background-attachment: fixed; /* Keeps the background fixed while scrolling */
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  min-height: 100vh; /* Ensures the section takes full viewport height */
+  width: 100%; 
+}
+
+
+/* Dotted Images */
+.dotted-left {
+  position: absolute;
+  top: 10%;
+  left: -50px;
+  width: 220px;
+  height: auto;
+  opacity: 0.3;
+}
+
+.dotted-right {
+  position: absolute;
+  bottom: 15%;
+  right: 5px;
+  width: 250px;
+  height: auto;
+  opacity: 0.3;
+  
+}
+
+/* Contact Heading */
+.contact-heading {
+  font-size: 20px;
+  font-weight: bold;
+  color: #20CB01;
+  margin-bottom: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  position: relative;
+  text-align: center;
+}
+
+/* Highlighted Text */
+.contact-heading .highlight {
+  color: #070759;
+}
+
+/* Wrapper for text & form */
+.contact-container {
+  display: flex;
+  justify-content: center; /* Centers both sections */
+  align-items: center; /* Aligns content vertically */
+  gap: 50px; /* Space between text & form */
+  max-width: 80%; /* Keeps it well-sized */
+  /* margin: auto; */
+}
+
+/* Contact text section */
+.contact-text {
+  flex: 1; /* Takes half space */
+  text-align: left;
+  margin-top: -100px; /* Adjust the value to move text upwards */
+  padding-right: 20px; 
+}
+
+.contact-text h3 {
+  color: #070759;
+}
+
+/* Contact form */
+.contact-form {
+  flex: 1; /* Takes half space */
+  background: #fff;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  z-index: 1;
+  position: relative; 
+}
+
+/* Custom Button Styling */
+.contact-btn {
+  width: 100%;
+  background-color: #070759; /* Dark blue/black shade */
+  color: white;
+  padding: 12px;
+  font-size: 16px;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  transition: background 0.3s ease;
+  cursor: pointer;
+}
+
+/* Hover Effect */
+.contact-btn:hover {
+  background-color: #0f3460; /* Slightly lighter shade */
+}
+
+
+
+
+.error-message {
+  color: red;
+  font-size: 14px;
+  margin-top: 5px;
+  text-align: left; /* Ensure text starts from left */
+  width: 100%;
+}
+
+/* Fix for phone input */
+.phone-wrapper {
+  width: 100%;
+}
+
+/* for displaying 91 */
+.phone-container {
+  display: flex;
+  align-items: center;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 5px;
+  width: 100%;
+}
+
+.phone-prefix {
+  background: #f1f1f1;
+  padding: 8px 12px;
+  border-right: 1px solid #ccc;
+  font-weight: bold;
+  border-radius: 5px 0 0 5px;
+}
+
+.phone-input {
+  border: none;
+  outline: none;
+  flex: 1;
+  padding: 8px;
+}
+
+
+/* Popup styles */
+.popup {
+  position: absolute;
+  top: -50px; /* Moves the popup above the form */
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #070759;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 14px;
+  font-weight: bold;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  opacity: 1;
+  z-index: 10;
+  animation: fadeOut 3s ease-in-out forwards;
+}
+
+.popup p {
+  margin: 0;
+  font-weight: bold;
+}
+
+/* Fade-out animation */
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+  80% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+
+
+
+/* Responsive Fix */
+
+@media (max-width: 1440px) {
+  .contact-section {
+    background-attachment: scroll; /* Allows background to move with content */
+    background-size: cover; /* Keeps image full */
+    background-position: top right;
+  }
+}
+
+@media (max-width: 1024px) {
+  .contact-section {
+    background-attachment: scroll; /* Allows background to move with content */
+    background-size: cover; /* Keeps image full */
+    background-position: top right;
+  }
+}
+
+
+@media (max-width: 992px) {
+  .contact-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .contact-text,
+  .contact-form {
+    width: 100%;
+  }
+
+  /* Hide dots on smaller screens */
+  .dotted-left, .dotted-right {
+    display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .contact-text {
+    margin-top: 0; /* Reset for smaller screens */
+    text-align: left;
+    padding-right: 0;
+  }
+
+  .contact-section {
+    background-image: none;
+  }
+
+  .contact-address{
+    text-align: center;
+  }
+
+  .contact-form{
+    margin-top: -30px;
+  }
+
+  .contact-line{
+    text-align: center;
+    margin-left: -10px;
+  }
+
+  .mail-line{
+    text-align: center;
+  }
+
+  .contact-text{
+    text-align: center;
+  }
+  
+}
+
+@media (max-width: 525px) {
+  .contact-address{
+    text-align: center;
+  }
+
+  .contact-form{
+    margin-top: -30px;
+  }
+
+  .contact-line{
+    text-align: center;
+  }
+
+  .mail-line{
+    text-align: center;
+  }
+
+  .contact-text{
+    text-align: center;
+  }
+
+}
+
+
+
+.contact-line{
+    color:#20CB01;
+    font-weight: bold;
+
+}
+
+.mail-line{
+  color:#20CB01;
+    font-weight: bold;
+}
+
+.mail-icon{
+  margin-right: 10px;
+}
+

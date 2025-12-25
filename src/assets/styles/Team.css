@@ -1,0 +1,128 @@
+
+
+
+/* General Styles */
+.team-section {
+  text-align: center;
+  padding: 50px 50px 10px 50px; /* Matches blog section */
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center align */
+  justify-content: center;
+  background-color: white;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+}
+
+.row {
+  justify-content: center;
+}
+
+.carousel {
+  display: flex;
+  justify-content: center;
+}
+
+/* Heading Styling */
+.team-heading {
+  font-size: 20px;
+  font-weight: bold;
+  color: #6A6969;
+  margin-bottom: 30px;
+  text-align: center;
+  margin-top: -30px;
+  padding: 10px 30px;
+  display: inline-block;
+}
+
+.teamlight-text {
+  color: #20CB01;
+  font-weight: bold;
+}
+
+.dark-text {
+  color: #170645;
+}
+
+/* Team Card */
+.team-card {
+  background: white;
+  border-radius: 10px;
+  border: 2px solid #ddd;
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.15);
+  padding: 20px;
+  text-align: center;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  height: 100%; /* Ensures uniform height */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/* Hover Effect */
+.team-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.25);
+}
+
+/* Team Image */
+.team-profile-img {
+  max-width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+/* Team Content */
+.team-content {
+  margin-top: 15px;
+  font-size: 14px;
+}
+
+/* Carousel Container */
+.carousel {
+  padding: 0 50px;
+}
+
+/* Carousel Controls */
+.carousel-control-prev, .carousel-control-next {
+  width: 5%;
+}
+
+.carousel-control-prev-icon, .carousel-control-next-icon {
+  background-color: #170645 !important; 
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .team-card {
+    padding: 15px;
+  }
+
+  .carousel {
+    padding: 0 30px;
+  }
+
+  .carousel-control-prev, .carousel-control-next {
+    width: 20%;
+  }
+
+  .team-profile-img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .team-heading {
+    margin-top: -30px;
+  }
+
+  .team-section {
+    padding: 90px 5px;
+  }
+}

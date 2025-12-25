@@ -1,0 +1,350 @@
+.learn-hero-section {
+  min-height: 480px;
+  position: relative;
+  overflow: hidden;
+}
+
+.learn-hero-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  filter: brightness(0.6); /* optional: darken bg for contrast */
+  z-index: 1;
+}
+
+.learn-hero-section .container {
+  z-index: 2;
+  position: relative;
+}
+
+
+@media (max-width: 768px) {
+  .learn-hero-section {
+    text-align: center;
+    padding: 60px 0;
+  }
+  .learn-hero-section h1 {
+    font-size: 2rem;
+  }
+}
+
+/* learnbanner */
+.learnfeature-section {
+  background-size: cover; /* Ensures the background image covers the section */
+  background-position: center; /* Centers the background */
+  background-repeat: no-repeat; 
+  max-height: 600px; 
+  display: flex;
+  align-items: center;
+  padding: 80px 0;
+  overflow-x: hidden!important;
+}
+
+.learn-right-image {
+  max-width: 70%; /* Reduce size while keeping it responsive */
+  height: auto;
+  max-height: 400px;
+  margin-top: 30px;
+  margin-bottom: -10px;
+}
+
+.top-image {
+  max-width: 60%;
+  height: auto;
+  margin-bottom: 20px;
+}
+
+
+.img-button {
+  cursor: pointer;
+  width: 150px;  /* Adjust size as needed */
+  height: auto;
+  transition: transform 0.2s ease-in-out;
+}
+
+.img-button:hover {
+  transform: scale(1.05); /* Slight zoom effect */
+}
+
+
+
+
+@media (max-width: 768px) {
+  .learnfeature-section {
+    background-position: center top;
+    margin-top: 40px;
+  }
+
+  .text-content {
+    text-align: center;
+    margin-top: 30px; 
+   }
+
+  .top-image {
+    max-width: 70%; 
+  }
+
+  .learn-right-image {
+    max-width: 50%; 
+  }
+}
+
+
+
+@media (max-width: 575px) {
+
+  /* .top-image {
+    padding-top: 20px;
+    margin-bottom: -60px;
+  } */
+
+  .top-image {
+    margin-top: -20px;
+    margin-bottom: 20px; /* 🔁 Increase this value */
+  }
+
+  .text-content {
+    margin-top: 10px; /* 🔁 Add if needed */
+  }
+
+  
+
+}
+
+@media (max-width: 1024px) {
+  .parentsfeature-section {
+    
+    margin-top: 60px;
+  }
+
+}
+
+
+
+
+/* what learn */
+
+/* .stats-numbers-container {
+  position: absolute;
+  bottom: 10px;
+  left: 68%;
+  transform: translateX(-50%);
+  background: white;
+  padding: 10px 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+} */
+
+.stats-numbers-container {
+  position: absolute;
+  bottom: 20px;
+  left: 68%;
+  transform: translateX(-50%);
+  font-size: 14px;
+
+}
+
+.stats-section {
+  position: relative;
+}
+
+.stats-numbers-container h5 {
+  font-size: 24px;
+}
+
+.learn-earn-text {
+  margin-top: -40px; /* Reduce top space between image and text */
+}
+
+@media (max-width: 1024px) {
+  .stats-numbers-container{
+    left: 67% !important;
+    transform: translateX(-50%);
+    bottom: 20px;
+    font-size: 10px;
+  }
+
+  .stats-numbers-container h5 {
+  font-size: 14px;
+}
+}
+
+@media (max-width: 768px) {
+  /* .stats-numbers-container {
+    position: static !important;
+    transform: none !important;
+    margin-top: 20px;
+    flex-direction: column;
+    align-items: center;
+  } */
+
+  .stats-numbers-container {
+    left: 67% !important;
+    transform: translateX(-50%);
+    bottom: 20px;
+    font-size: 10px;
+
+  }
+
+  .learn-earn-text {
+    margin-top: 0;
+  }
+}
+
+
+@media (max-width: 575px){
+
+  .stats-numbers-container {
+    left: 68% !important;
+    transform: translateX(-50%);
+    bottom: 20px;
+    font-size: 8px;
+
+  }
+
+
+}
+
+@media (max-width: 375px){
+
+  .stats-numbers-container {
+    left: 69% !important;
+    transform: translateX(-50%);
+    bottom: 0px;
+    font-size: 8px;
+
+  }
+
+
+}
+
+
+
+
+
+@media (max-width: 575px){
+  .whatlearn{
+    margin-top: 100px;
+  }
+
+  .headingtext{
+    margin-top: -10px;
+  }
+
+  .headingtext1{
+    margin-top: 10px;
+  }
+
+  .whatlearnimg{
+    justify-content: center;
+  }
+ 
+}
+
+
+.image-card {
+  position: relative;
+  overflow: hidden; 
+  border-radius: 16px;
+}
+
+.student-img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 16px;
+}
+
+/* Overlay Text */
+.overlay-text {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  padding: 15px;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  color: white;
+  z-index: 2;
+}
+
+.overlay-text h6 {
+  font-weight: 700;
+}
+
+.overlay-text p {
+  font-size: 0.85rem;
+  margin: 0;
+}
+
+/* Ensure mobile still looks good */
+@media (max-width: 768px) {
+  .student-img {
+    height: 220px;
+    object-fit: cover;
+  }
+
+  .overlay-text {
+    font-size: 0.9rem;
+    padding: 10px;
+  }
+}
+
+
+/* how it works  */
+
+.work-card {
+  position: relative;
+  overflow: hidden;
+  border-radius: 16px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease;
+}
+
+.work-card img {
+  width: 100%;
+  max-width: 250px;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+  border-radius: 16px;
+}
+
+.work-card .overlay {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  padding: 15px;
+  color: white;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.7), transparent);
+  border-bottom-left-radius: 16px;
+  border-bottom-right-radius: 16px;
+}
+
+.work-card .title {
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+.work-card .desc {
+  font-size: 0.85rem;
+  margin-bottom: 0;
+}
+
+/* Center card lifted */
+.work-card.lifted {
+  margin-top: -30px;
+}
+
+/* Responsive tweak */
+@media (max-width: 768px) {
+  .work-card.lifted {
+    margin-top: 0;
+  }
+}
+
+
+

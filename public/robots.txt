@@ -1,0 +1,6 @@
+User-agent: *
+Disallow: /privacy-policy
+Disallow: /terms-and-conditions
+Disallow: /refund-policy
+Disallow: /blog
+Allow: /

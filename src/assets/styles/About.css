@@ -1,0 +1,813 @@
+/* General styles */
+.about-section {
+  padding: 50px 0;
+  
+}
+
+.about-title {
+  font-size: 20px;
+  font-weight: bold;
+  color: #20CB01;
+  margin-bottom: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  position: relative;
+  text-align: center;
+  margin-top: 50px;
+  /* background-image: url("../images/whystudysmart.png");
+  background-size: contain; 
+  background-repeat: no-repeat; 
+  background-position: 68% center;
+  padding: 10px 30px; */
+}
+
+/* Highlighted Text */
+.about-title .highlight {
+  /* color: #170645; */
+  color: #070759;
+}
+
+.about-triangle-bg {
+  position: absolute;
+  left: 0;
+  top: -50px;
+  width: 220px; /* Adjust size */
+  height: auto;
+  z-index: 1; /* Push it behind other images */
+}
+
+.about-container {
+  position: relative;
+  overflow: hidden;
+  
+}
+
+/* New Top-Rightmost Dotted Image */
+.about-dotted-top-right {
+  position: absolute;
+  top: 10;  /* Aligns to top */
+  right: 0; /* Aligns to rightmost end */
+  width: 100px; /* Adjust size */
+  z-index: 1;
+}
+
+
+.about-img-container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+
+
+
+.main-img {
+  position: relative;
+  z-index: 2; 
+}
+
+
+
+/* Main Image */
+.main-img {
+  position: relative;
+  width: 80%;
+  max-width: 500px;
+  display: block;
+  margin-left: auto;
+  z-index: 2;
+  margin-bottom: 30px; /* Adds space below the image */
+}
+
+/* Overlay Image */
+.overlay-img {
+  position: absolute;
+  bottom: -20px;
+  right: -20px;
+  width: 50%;
+  max-width: 200px;
+  z-index: 3;
+}
+
+
+/* Top Dotted Image */
+.about-dotted-top {
+  position: absolute;
+  top: -40px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 20%;
+  z-index: 1;
+}
+
+/* Bottom Dotted Image */
+.about-dotted-bottom {
+  position: absolute;
+  bottom: -40px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 20%;
+  z-index: 1;
+}
+
+/* Right Dotted Image */
+.about-dotted-right {
+  position: absolute;
+  right: -40px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 20%;
+  z-index: 1;
+}
+
+
+.about-text {
+  font-size: 16px;
+  color: #666;
+  line-height: 1.8;
+  padding-left: 20px; /* Adds left padding for spacing */
+}
+
+/* Responsive Styles */
+
+@media (max-width: 1200px) {
+  .about-dotted-top-right {
+    width: 80px;
+  }
+}
+
+@media (max-width: 992px) {
+  .about-dotted-top-right {
+    
+    width: 60px;
+  }
+}
+
+
+@media (max-width: 768px) {
+  .about-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .about-img-container{
+    left: -50px;
+  }
+
+  .about-title {
+    background-position: 90% center;
+    margin-top: 10px;
+    
+  }
+  
+
+  /* Ensure the image appears above the text on mobile */
+  .mobile-first {
+    order: -1 !important;
+  }
+
+  .about-triangle-bg {
+    display: none; /* Reduce size for mobile */
+  }
+
+  .main-img {
+    width: 90%;
+    max-width: 350px;
+  }
+
+  .overlay-img {
+    width: 65%;
+    max-width: 120px;
+    bottom: -10px;
+    right: -5px;
+  }
+
+  .about-title {
+    font-size: 24px;
+  }
+
+  .about-text {
+    font-size: 14px;
+    padding-left: 0; /* Remove extra padding */
+    text-align: justify!important;
+  }
+
+  .about-section .row {
+    flex-direction: row !important; /* Ensure image stays on left, text on right */
+  }
+
+  .about-dotted-top {
+    top: -20px;
+    width: 30%;
+  }
+
+  .about-dotted-bottom {
+    bottom: -20px;
+    width: 30%;
+  }
+
+  .about-dotted-right {
+    right: -20px;
+    width: 20%;
+  }
+
+  .about-dotted-top-right {
+    top: 10px;
+    width: 50px;
+  }
+}
+
+@media (max-width: 320px) {
+  .about-title {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 576px) {
+  .about-text{
+    margin-left: 20px;
+    margin-top: 30px;
+    margin-bottom: -20px;
+  }
+  .about-dotted-top,
+  .about-dotted-bottom {
+    width: 20%;
+  }
+
+  .about-dotted-right {
+    width: 20%;
+  }
+
+  .main-img {
+    width: 60%;
+  }
+
+  .about-dotted-top-right {
+    top: 5px;
+    width: 40px;
+  }
+}
+
+
+@media (max-width: 991.98px) {
+  .about-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .about-img-container {
+    left: 0;
+    order: -1; /* Show image on top */
+    margin-bottom: 30px;
+  }
+
+  .about-title {
+    margin-top: 10px;
+  }
+
+  .about-triangle-bg {
+    display: none;
+  }
+
+  .main-img {
+    width: 90%;
+    max-width: 350px;
+  }
+
+  .overlay-img {
+    width: 65%;
+    max-width: 120px;
+    bottom: -10px;
+    right: -5px;
+  }
+
+  .about-text {
+    font-size: 14px;
+    padding-left: 0;
+    text-align: left;
+  }
+
+  .about-section .row {
+    flex-direction: column !important;
+  }
+
+  .about-dotted-top {
+    top: -20px;
+    width: 30%;
+  }
+
+  .about-dotted-bottom {
+    bottom: -20px;
+    width: 30%;
+  }
+
+  .about-dotted-right {
+    right: -20px;
+    width: 20%;
+  }
+
+  .about-dotted-top-right {
+    top: 10px;
+    width: 50px;
+  }
+
+  .about-section .row .col-md-6 {
+    width: 100%;
+  }
+
+  .about-text {
+    padding-left: 0;
+    padding-right: 0;
+    text-align: left;
+  }
+
+  .about-img-container {
+    width: 100%;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .main-img {
+    margin: 0 auto;
+    display: block;
+  }
+
+  .overlay-img{
+    margin: 0 80px;
+    display: block;
+
+  }
+  
+  
+  
+  
+}
+
+@media (max-width: 575px) {
+  .overlay-img{
+    margin: 0 -20px;
+    display: block;
+
+  }
+}
+
+
+
+
+
+
+
+/* IN THE NEWS Section */
+/* IN THE NEWS Section */
+.news-section {
+  text-align: center;
+  width: 100%; 
+  overflow: hidden; /* Hide overflow */
+  position: relative;
+  margin-bottom: 50px;
+  margin-top: 90px;
+}
+
+/* News Heading */
+.news-heading {
+  font-size: 20px;
+  font-weight: bold;
+  color: #20CB01;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  text-transform: uppercase;
+  margin-bottom: 50px;
+  margin-top: 10px;
+}
+
+.news-heading .highlight {
+  color: #070759;
+}
+
+/* News Slider */
+.news-slider {
+  width: 100%;
+  display: flex;
+  overflow: hidden;
+  position: relative;
+}
+
+.news-track {
+  display: flex;
+  width: 200%; /* Ensures smooth looping */
+  animation: scroll 10s linear infinite;
+}
+
+/* News Logos */
+.news-logo {
+  width: 150px; /* Adjust size */
+  height: auto;
+  opacity: 0.8;
+  margin: 0 15px; /* Spacing between logos */
+  transition: 0.3s ease-in-out;
+  display: block; 
+  margin: auto; 
+}
+
+.news-logo:hover {
+  opacity: 1;
+}
+
+/* Decorator Image - Positioned at the Rightmost End */
+.news-decorator {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%) scaleX(-1); /* Flip the image horizontally */
+  width: 60px; /* Adjust size as needed */
+  height: auto;
+  z-index: 2; /* Ensure it appears above other content */
+  pointer-events: none; /* Prevent interactions */
+}
+
+/* Animation */
+@keyframes scroll {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-30%);
+  }
+}
+
+/* Responsive Adjustments */
+@media (max-width: 1024px) {
+  .news-decorator {
+    width: 60px; /* Slightly smaller for tablets */
+  }
+}
+
+@media (max-width: 768px) {
+  .news-heading {
+    font-size: 20px;
+  }
+  
+  .news-section {
+    padding: 0px 10px;
+  }
+
+  .news-logo {
+    width: 100px;
+  }
+  
+  .news-track {
+    animation: scroll 8s linear infinite; /* Speed up on smaller screens */
+  }
+
+  /* Adjust decorator image size on smaller screens */
+  .news-decorator {
+    width: 60px;
+  }
+}
+
+@media (max-width: 576px) {
+  .news-decorator {
+    width: 60px; /* Even smaller for mobile */
+  }
+}
+
+
+@media (max-width: 425px) {
+  .mission-heading{
+    font-size: 16px!important;
+  }
+}
+
+
+
+
+/* TUTOR SECTION */
+
+
+/* TUTOR SECTION */
+.tutor-section {
+  position: relative;
+  padding: 60px 0;
+  overflow: hidden;
+  margin-top: -50px;
+}
+
+/* Make sure the container handles absolute positioning */
+.tutor-img-container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Background Triangle */
+.triangle-bg {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%); /* Center it vertically */
+  width: 200px; /* Adjust size */
+  height: 400px;
+  z-index: 1; /* Ensure it's behind the tutor image */
+}
+
+/* Tutor Image */
+.tutor-img {
+  max-width: 80%;
+  position: relative; /* Ensures it's above the triangle */
+  z-index: 2; /* Higher z-index to be on top */
+}
+
+/* Right Side Content */
+.tutor-title {
+  font-size: 28px;
+  font-weight: bold;
+  color: #2F52DF;
+}
+
+.tutor-text {
+  font-size: 16px;
+  color: #6A6969;
+  margin-bottom: 20px;
+}
+
+/* List styling */
+.tutor-list {
+  list-style: none;
+  padding: 0;
+}
+
+.tutor-list li {
+  font-size: 16px;
+  color: #1D1D1D;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.tutor-list li img {
+  width: 25px;
+  margin-right: 10px;
+}
+
+.dotted-bg {
+  position: absolute;
+  right: -50px;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 1;
+  pointer-events: none;
+}
+
+.dotted-bg img {
+  max-width: 150px;
+  opacity: 0.5;
+}
+
+
+@media (max-width: 768px) {
+.triangle-bg {
+  display: none; /* Reduce size for mobile */
+}
+.tutor-section .row {
+  flex-direction: row !important; /* Ensure image stays on left, text on right */
+}
+.tutor-section {
+  top: -90px;
+  margin-bottom: -120px;
+  
+}
+}
+
+@media (max-width: 576px) {
+  .tutor-img{
+    margin-top: -20px;
+  }  
+
+}
+
+@media (max-width: 320px) {
+  .tutor-section {
+  margin-left: 15px;
+  }
+}
+
+@media (max-width: 425px) {
+  .tutor-section {
+  margin-left: 15px;
+  }
+}
+
+@media (max-width: 768px) {
+  .team-heading {
+    margin-top: -80px;
+  }
+  .tutor-section {
+    margin-left: 15px;
+    }
+
+}
+
+
+
+
+/* team */
+
+.about-teams-section {
+  padding: 50px 20px;
+  background-color: #fff;
+  text-align: center;
+  margin-top: -40px;
+  margin-bottom: -50px;
+}
+
+/* Heading */
+.about-teams-heading {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.light-text {
+  color: #6A6969; /* Color for the first part */
+}
+
+.dark-text {
+  color: #070759; /* Color for the second part */
+}
+
+.about-team-heading {
+  margin-top: -40px;
+  
+}
+
+.team-section-about {
+  margin-top: -80px; /* Adjust this value as needed */
+  margin-bottom: -50px;
+}
+
+
+.team-img-container {
+  position: relative;
+  width: 200px; /* Adjust based on your image size */
+  height: 290px;
+  margin: 0 auto; /* Center the container */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Outline Image */
+.team-outline-img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 1; /* Keeps it behind the profile image */
+  pointer-events: none; /* Prevents interaction */
+}
+
+/* Profile Image */
+.team-profile-img {
+  width: 85%; /* Slightly smaller to fit within the outline */
+  height: auto;
+  object-fit: cover;
+  position: relative;
+  /* z-index: 2;  */
+  border-radius: 50%; /* Circular shape */
+}
+
+
+/* @media (max-width: 768px) {
+  .about-team-heading {
+    padding-top: 50px;
+  }
+} */
+
+
+@media (max-width: 768px) {
+  .team-img-container {
+    width: 190px;
+    height: 300px;
+  }
+
+  .team-profile-img {
+    width: 80%;
+  }
+
+  
+}
+
+@media (max-width: 576px) {
+  .about-team-heading{
+    margin-top: -70px;
+  }
+
+  .team-img-container {
+    width: 200px;
+    height: 300px;
+  }
+
+  .team-profile-img {
+    width: 75%;
+  }
+
+}
+
+@media (max-width: 425px) {
+  .about-team-heading{
+    margin-top: -70px;
+  }
+}
+
+
+/* vision mission */
+
+/* Wrapper */
+.mission-vision-wrapper {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+/* Mission Section */
+.mission-row .mission-text h3,
+.vision-row .vision-text h3 {
+  font-size: 2rem;
+}
+
+.mission-text,
+.vision-text {
+  padding: 15px;
+}
+
+/* .mission-image img,
+.vision-image img {
+  border-radius: 15px;
+  max-height: 100%;
+  object-fit: cover;
+} */
+
+
+.mission-image img,
+.vision-image img {
+  width: 75%; /* or 70%, or any value you prefer */
+  max-width: 350px; /* optional cap */
+  margin: 0 auto;
+  display: block;
+  border-radius: 15px;
+  object-fit: cover;
+}
+
+
+@media (max-width: 768px) {
+  .vision-image img {
+    margin-top: -80px;
+  }
+
+  .mission-image img,
+.vision-image img {
+  max-width: 250px;
+}
+}
+
+
+.mission-description{
+  font-size: 16px;
+  color: #666;
+  line-height: 1.8;
+  text-align:justify;
+
+}
+
+
+
+.vision-description{
+  font-size: 16px;
+  color: #666;
+  line-height: 1.8;
+  text-align:justify;
+}
+
+.mission-title{
+  color: #F48616;
+}
+
+.vision-title{
+  color: #F48616;
+}
+
+
+
+
+
+
+
+

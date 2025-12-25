@@ -1,0 +1,272 @@
+.aifeature-section {
+  background-size: cover; /* Ensures the background image covers the section */
+  background-position: center; /* Centers the background */
+  background-repeat: no-repeat; 
+  max-height: 600px; 
+  display: flex;
+  align-items: center;
+  padding: 80px 0;
+  overflow-x: hidden!important;
+}
+
+.ai-right-image {
+  max-width: 70%; /* Reduce size while keeping it responsive */
+  height: auto;
+  max-height: 400px;
+  margin-top: 30px;
+  margin-bottom: -10px;
+}
+
+.top-image {
+  max-width: 60%;
+  height: auto;
+  margin-bottom: 20px;
+}
+
+
+.img-button {
+  cursor: pointer;
+  width: 150px;  /* Adjust size as needed */
+  height: auto;
+  transition: transform 0.2s ease-in-out;
+}
+
+.img-button:hover {
+  transform: scale(1.05); /* Slight zoom effect */
+}
+
+
+
+
+@media (max-width: 768px) {
+  .aifeature-section {
+    background-position: center top;
+    margin-top: 40px;
+  }
+
+  .text-content {
+    text-align: center;
+    margin-top: 30px; 
+   }
+
+  .top-image {
+    max-width: 70%; 
+  }
+
+  .ai-right-image {
+    max-width: 50%; 
+  }
+}
+
+
+
+@media (max-width: 575px) {
+
+  /* .top-image {
+    padding-top: 20px;
+    margin-bottom: -60px;
+  } */
+
+  .top-image {
+    margin-top: -20px;
+    margin-bottom: 20px; /* 🔁 Increase this value */
+  }
+
+  .text-content {
+    margin-top: 10px; /* 🔁 Add if needed */
+  }
+
+  
+
+}
+
+@media (max-width: 1024px) {
+  .aifeature-section {
+    
+    margin-top: 60px;
+  }
+
+}
+
+/* Ai leaining with skillorea */
+
+.ailearninggrouped{
+  width: 70%;
+}
+
+@media (max-width: 768px) {
+.ailearninggrouped{
+  width: 50%;
+}
+
+.Ailearn-para{
+  text-align: justify;
+}
+
+
+}
+
+@media (max-width: 1024px) {
+  .ai-layout {
+    display: flex !important;
+    flex-direction: column !important;
+  }
+
+  .ai-layout > .col-lg-6 {
+    width: 100% !important;
+    max-width: 100% !important;
+  }
+
+  .ailearninggrouped{
+  width: 40%;
+  padding-bottom: 30px;
+}
+
+.Ailearn-heading{
+  padding-bottom: 20px;
+}
+}
+
+
+@media (max-width: 575px) {
+.ailearninggrouped{
+  width: 70%;
+}
+
+}
+
+/* transform AI Learning */
+
+.why-ai-section h4 {
+  font-size: 2rem;
+}
+
+.why-ai-section .text-block h6 {
+  font-size: 1rem;
+  margin-top: 0.3rem;
+}
+
+.why-ai-section img {
+  width: 70%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 12px;
+  
+}
+
+.why1{
+ max-width: 320px;
+ max-height:220px;
+ margin-top: 50px;
+ 
+ 
+}
+.why2{
+  max-width: 300px;
+  max-height:200px;
+  margin-left: -80px;
+  margin-top: 20px;
+}
+
+
+.why4{
+  margin-top: -80px;
+  margin-left: -80px;
+}
+
+@media (max-width: 1024px) {
+.transform-heading{
+  margin-top: -20px;
+  padding-bottom: 10px;
+}
+
+.transform-img{
+  margin-top: 70px;
+}
+}
+
+@media (max-width: 768px) {
+  .transform-img{
+  width: 90%!important;
+}
+
+.transform-heading{
+  margin-top: -30px;
+}
+
+}
+
+
+@media (max-width: 575px) {
+  .why1{
+    margin-right: 10px;
+  }
+
+
+  .why2{
+  max-width: 300px;
+  max-height:200px;
+  margin-left: -30px;
+  margin-top: 20px;
+}
+
+.why3{
+  
+  
+  margin-top: -10px;
+}
+
+.why4{
+  margin-top: -80px;
+  margin-left: -30px;
+}
+
+}
+
+
+/* skill development features */
+
+.aifeature-card-img {
+  background-size: cover;
+  background-position: center;
+  border-radius: 16px;
+  min-height: 300px;
+  padding: 20px;
+  color: #000;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  transition: transform 0.2s ease;
+}
+
+.aifeature-card-img:hover {
+  transform: translateY(-5px);
+}
+
+
+
+@media (max-width: 575px) {
+  .aifeature-card-img {
+    min-height: 340px;
+  }
+}
+
+@media (max-width: 1024px) {
+.ailearn-features{
+  margin-top: -30px;
+}
+}
+
+@media (max-width: 768px) {
+.ailearn-features{
+  margin-top: -60px;
+}
+}
+
+@media (max-width: 768px) {
+.faq-heading{
+  margin-top: -90px;
+}
+}
+

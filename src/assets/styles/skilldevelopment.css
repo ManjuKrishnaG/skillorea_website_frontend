@@ -1,0 +1,418 @@
+.skill-hero-section {
+  min-height: 480px;
+  position: relative;
+  overflow: hidden;
+}
+
+.skill-hero-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  filter: brightness(0.6); 
+  z-index: 1;
+}
+
+.skill-hero-section .container {
+  z-index: 2;
+  position: relative;
+}
+
+
+@media (min-width: 992px) {
+  .stagger-card-lg {
+    margin-top: 80px !important; /* adjust as needed */
+  }
+}
+
+
+
+
+@media (max-width: 768px) {
+  .skill-hero-section {
+    text-align: center;
+    padding: 60px 0;
+  }
+  .skill-hero-section h1 {
+    font-size: 2rem;
+  }
+  
+
+  /* .why3{
+    margin-top: -20px;
+  }
+ 
+
+  .whyskill_dev .why-img-col1 {
+    flex: 20 0 28%; 
+  }
+  .whyskill_dev .why-img-col2 {
+    flex: 0 0 48%; 
+  }
+  .whyskill_dev .why-img-col3 {
+    flex: 10 0 38%; 
+  }
+  .whyskill_dev .why-img-col4 {
+    flex: 0 0 38%;
+  } */
+}
+
+
+/* Only for 1024px resolution */
+/* @media (min-width: 1024px) and (max-width: 1024px) {
+  .whyskill_dev {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px; 
+  }
+
+  .why3{
+    margin-top: -20px;
+  }
+
+  .whyskill_dev .why-img-col1 {
+    flex: 10 0 28%; 
+  }
+  .whyskill_dev .why-img-col3 {
+    flex: 10 0 38%; 
+  }
+
+  .whyskill-headings{
+    font-size: 14px;
+  }
+} */
+
+
+
+/* banner section */
+
+.skilldevelopmentfeature-section {
+  background-size: cover; /* Ensures the background image covers the section */
+  background-position: center; /* Centers the background */
+  background-repeat: no-repeat; 
+  max-height: 600px; 
+  display: flex;
+  align-items: center;
+  padding: 80px 0;
+  overflow-x: hidden!important;
+}
+
+.skilldevelopment-right-image {
+  max-width: 70%; /* Reduce size while keeping it responsive */
+  height: auto;
+  max-height: 400px;
+  margin-top: 30px;
+  margin-bottom: -10px;
+}
+
+.top-image {
+  max-width: 60%;
+  height: auto;
+  margin-bottom: 20px;
+}
+
+
+.img-button {
+  cursor: pointer;
+  width: 150px;  /* Adjust size as needed */
+  height: auto;
+  transition: transform 0.2s ease-in-out;
+}
+
+.img-button:hover {
+  transform: scale(1.05); /* Slight zoom effect */
+}
+
+
+
+
+@media (max-width: 768px) {
+  .skilldevelopmentfeature-section {
+    background-position: center top;
+    margin-top: 40px;
+  }
+
+  .text-content {
+    text-align: center;
+    margin-top: 30px; 
+   }
+
+  .top-image {
+    max-width: 70%; 
+  }
+
+  .skilldevelopment-right-image {
+    max-width: 50%; 
+  }
+}
+
+
+
+@media (max-width: 575px) {
+
+  /* .top-image {
+    padding-top: 20px;
+    margin-bottom: -60px;
+  } */
+
+  .top-image {
+    margin-top: -20px;
+    margin-bottom: 20px; /* 🔁 Increase this value */
+  }
+
+  .text-content {
+    margin-top: 10px; /* 🔁 Add if needed */
+  }
+
+  
+
+}
+
+@media (max-width: 1024px) {
+  .skilldevelopmentfeature-section {
+    
+    margin-top: 60px;
+  }
+
+}
+
+
+/* what is skill development */
+
+.skillgrouped{
+  width: 60%;
+}
+
+/* what is skill development */
+
+
+/* Section title spacing */
+.section-title {
+  font-size: 2rem;
+}
+
+.skilldevcontent{
+  margin-top: -40px;
+  
+}
+
+.skilldev_skillorea {
+  margin-left: -60px;
+}
+
+
+
+/* Main image (bottom) */
+.what-skill-section .main-img {
+  width: 100%;
+  max-width: 450px; /* or whatever size fits well */
+  height: auto;
+  border-radius: 16px;
+  display: block;
+  z-index: 1;
+  position: relative;
+}
+
+/* Small image (top-left overlap) */
+.what-skill-section .small-img {
+  width: 250px;
+  height: auto;
+  position: absolute;
+  bottom: -30px;
+  left: 90px;
+  border-radius: 12px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  z-index: 2;
+}
+
+
+
+/* Mobile responsiveness */
+
+@media (max-width: 1024px) {
+  .what-skill-section .small-img {
+    position: relative;
+    bottom: 60px;
+    left: 90px;
+    margin-bottom: 1rem;
+    width: 200px;
+  }
+
+  .what-skill-section .main-img {
+    width: 100%;
+    max-width: 250px;
+  }
+
+  .skillgrouped{
+    width: 100%;
+    max-width: 250px;
+  }
+
+  .skilldev_skillorea{
+    margin-left: 20px;
+    text-align: justify;
+  }
+
+}
+
+
+@media (max-width: 768px) {
+  .what-skill-section .small-img {
+    position: relative;
+    bottom: 30px;
+    left: -30px;
+    margin-bottom: 1rem;
+    width: 150px;
+  }
+
+  .what-skill-section .main-img {
+    width: 100%;
+    max-width: 250px;
+  }
+
+  .section-title {
+    font-size: 1.5rem;
+  }
+}
+
+
+@media (max-width: 575px) {
+  .what-skill-section .main-img {
+    width: 100%;
+    max-width: 220px;
+
+  }
+
+   .what-skill-section .small-img {
+    position: relative;
+    bottom: 30px;
+    left: 30px;
+    margin-bottom: 1rem;
+    width: 120px;
+
+   }
+
+
+}
+
+
+
+/* why skill development */
+
+.why-skill-section{
+  margin-left: 40px;
+}
+
+.why-skill-section h4 {
+  font-size: 2rem;
+}
+
+.why-skill-section .text-block h6 {
+  font-size: 1rem;
+  margin-top: 0.3rem;
+}
+
+.why-skill-section img {
+  width: 70%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 12px;
+  
+}
+
+.why1{
+ max-width: 320px;
+ max-height:220px;
+ margin-top: 50px;
+ 
+ 
+}
+.why2{
+  max-width: 300px;
+  max-height:200px;
+  margin-left: -80px;
+  margin-top: 20px;
+}
+
+
+.why4{
+  margin-top: -80px;
+  margin-left: -80px;
+}
+
+
+@media (max-width: 1024px) {
+.whyskill_dev{
+  margin-top: 30px;
+  /* max-width: 450px; */
+}
+
+.why1{
+  margin-right: 50px!important;
+}
+
+.why2{
+  margin-left: 50px;
+}
+}
+
+
+@media (max-width: 575px) {
+  .why1{
+    margin-right: 10px;
+  }
+
+
+  .why2{
+  max-width: 320px;
+  max-height:200px;
+  margin-left: -30px;
+  margin-top: 20px;
+}
+
+.why3{
+  
+  
+  margin-top: -10px;
+}
+
+.why4{
+  margin-top: -80px;
+  margin-left: -30px;
+}
+
+}
+
+
+/* skill development features */
+
+.feature-card-img {
+  background-size: cover;
+  background-position: center;
+  border-radius: 16px;
+  min-height: 300px;
+  padding: 20px;
+  color: #000;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  transition: transform 0.2s ease;
+}
+
+.feature-card-img:hover {
+  transform: translateY(-5px);
+}
+
+
+
+@media (max-width: 575px) {
+  .feature-card-img {
+    min-height: 340px;
+  }
+}
+
+

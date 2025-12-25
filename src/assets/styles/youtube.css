@@ -1,0 +1,116 @@
+.youtube-section {
+  position: relative;
+  background-color: white;
+}
+
+.youtube-heading{
+  margin-top: 10px;
+}
+
+.video-container {
+  max-width: 600px;
+  width: 100%;
+  border-radius: 10px;
+  overflow: hidden;
+  position: relative;
+}
+
+.play-button img {
+  width: 70px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.play-button:hover img {
+  transform: scale(1.1);
+}
+
+
+/* Dotted Image Styling */
+.dotted-image {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 80px; /* Adjust size as needed */
+}
+
+.dotted-left {
+  left: 0px; /* Adjust position */
+  width:200px;
+}
+
+.dotted-right {
+  right: 0px; /* Adjust position */
+  width:200px;
+}
+
+
+.youtube-heading {
+  font-size: 20px;
+  font-weight: bold;
+  color: #20CB01;
+  margin-bottom: 30px;
+  display: inline-block;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  position: relative;
+  text-align: center;
+  /* background-image: url("../images/whystudysmart.png"); 
+  background-size: contain;
+  background-repeat: no-repeat; 
+  background-position: right center; */
+  padding: 60px 30px 10px 30px;
+  
+  margin-top: -30px;
+}
+
+/* Highlighted Text */
+.youtube-heading .highlight {
+  color: #070759;
+}
+
+
+@media (max-width: 992px) {
+  .youtube-heading {
+    font-size: 30px;
+  }
+}
+
+@media (max-width: 768px) {
+  .youtube-heading {
+    font-size: 20px;
+  }
+  .dotted-left, .dotted-right {
+    display: none; /* Hide on small screens */
+  }
+}
+
+@media (max-width: 576px) {
+  .youtube-heading {
+    font-size: 20px;
+    flex-direction: column;
+    margin-top: -70px;
+  }
+
+  .video-container {
+    max-width: 350px;
+  }
+}
+
+@media (max-width: 475px) {
+  
+
+  .video-container {
+    max-width: 300px;
+  }
+}
+
+
+
+.video-container img {
+  width: 90%;
+  height: auto;
+  display: block;
+}
+
+

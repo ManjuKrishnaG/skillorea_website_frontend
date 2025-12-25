@@ -1,0 +1,261 @@
+/* Pricing Section */
+.pricing-section {
+  padding: 120px 20px 80px;
+  background-image: url("../../assets/images/pricingbg1.jpg"); /* Path to your image */
+  background-size: cover;
+  background-position: top right;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  text-align: center;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+  width: 100%;
+}
+
+/* Responsive Background Adjustments */
+@media (max-width: 1440px) {
+  .pricing-section {
+    background-attachment: scroll; /* Allows background to move with content */
+    background-size: cover;
+    background-position: center;
+  }
+}
+
+@media (max-width: 1024px) {
+  .pricing-section {
+    background-attachment: scroll;
+    background-size: cover;
+    background-position: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .pricing-section {
+    background-image: none; /* Hides background on mobile devices */
+  }
+}
+
+
+.pricing-heading {
+  font-size: 20px;
+  font-weight: bold;
+  color: #6A6969;
+  margin-bottom: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  position: relative;
+  text-align: center;
+  margin-top: 20px;
+}
+
+
+
+.pricing-heading .highlight{
+  color: #20CB01;
+}
+
+.pricing-heading h2 {
+  font-size: 36px;
+  font-weight: bold;
+  color: #170645;
+  display: inline-block;
+  position: relative;
+}
+
+/* Background Shape */
+.pricing-bg {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 250px;
+  opacity: 0.7;
+}
+
+/* Pricing Card */
+.pricing-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: white;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  max-width: 900px;
+  margin: 0 auto; /* Center horizontally */
+  text-align: left;
+  width: 100%;
+}
+
+.pricing-left {
+  flex: 1;
+  background: #e0ebff;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.pricing-left h3 {
+  font-size: 20px;
+  font-weight: bold;
+  color: #20CB01;
+}
+
+.pricing-left h2 {
+  font-size: 42px;
+  font-weight: bold;
+  color: #F48616;
+}
+
+.pricing-right {
+  flex: 2;
+  padding-left: 30px;
+}
+
+.pricing-right ul {
+  list-style: none;
+  padding: 0;
+}
+
+.pricing-right ul li {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 14px;
+}
+
+.icon {
+  color: #170645;
+}
+
+.pricing-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 50px; /* Space between sections */
+  width: 100%;
+}
+/* Dotted Images */
+.dotted-left {
+  position: absolute;
+  top: 10%;
+  left: -50px;
+  width: 180px;
+  opacity: 0.3;
+}
+
+.dotted-right {
+  position: absolute;
+  bottom: 15%;
+  right: 5%;
+  width: 200px;
+  opacity: 0.3;
+}
+
+/* Features Section - Correctly Positioned */
+.pricing-features {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  width: 100%;
+  flex-wrap: wrap;
+}
+
+.feature {
+  display: flex;
+  align-items: center; /* Align icon and text */
+  gap: 10px; /* Space between icon and text */
+}
+
+.feature i {
+  font-size: 30px;
+  color: #170645;
+}
+
+.feature p {
+  font-size: 16px;
+  color: #333;
+  margin: 0; /* Remove default margin */
+}
+
+.features-icon {
+  width: 30px; /* Adjust size as needed */
+  height: 30px;
+  object-fit: contain;
+}
+
+.pricing-btn {
+  background-color: #170645 !important;
+  border-color: #170645 !important;
+  color: white !important;
+}
+
+.pricing-btn:hover {
+  background-color: #0e032d !important; /* A slightly darker shade for hover */
+  border-color: #0e032d !important;
+}
+
+
+/* Responsive Design */
+@media (max-width: 992px) {
+  .pricing-card {
+    flex-direction: column;
+    text-align: center;
+    padding: 20px;
+  }
+
+  .pricing-right {
+    padding-left: 0;
+  }
+
+  .dotted-left,
+  .dotted-right {
+    display: none; /* Hide dots on smaller screens */
+  }
+
+  .pricing-features {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .pricing-features {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+
+@media (max-width: 768px) {
+  .pricing-card {  
+    text-align: center;
+    
+  }
+
+  .contact-section {
+    background-image: none;
+  }
+}
+
+@media (max-width: 1440px) {
+  .pricing-section {
+    background-attachment: scroll; /* Allows background to move with content */
+    background-size: cover; /* Keeps image full */
+    background-position: top right;
+  }
+}
+
+@media (max-width: 1024px) {
+  .pricing-section {
+    background-attachment: scroll; /* Allows background to move with content */
+    background-size: cover; /* Keeps image full */
+    background-position: top right;
+  }
+}
+
+
+
+

@@ -1,0 +1,21 @@
+@media (max-width: 768px) {
+  .learn-img-fluid{
+    width: 50%;
+    margin-top: -20px;
+
+  }
+
+  .learn-text-muted{
+    text-align: justify;
+  }
+}
+
+
+
+@media (max-width: 575px) {
+  .learn-img-fluid{
+    width: 70%;
+    margin-top: -20px;
+
+  }
+}

@@ -1,0 +1,17 @@
+.splash-screen {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: black; /* Set background if needed */
+  z-index: 9999;
+}
+
+.splash-gif {
+  max-width: 100%;
+  height: auto;
+}

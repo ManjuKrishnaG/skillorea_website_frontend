@@ -1,0 +1,114 @@
+.healthfeature-section {
+  background-size: cover; /* Ensures the background image covers the section */
+  background-position: center; /* Centers the background */
+  background-repeat: no-repeat; 
+  max-height: 600px; 
+  display: flex;
+  align-items: center;
+  padding: 80px 0;
+  overflow-x: hidden!important;
+}
+
+.health-right-image {
+  max-width: 70%; /* Reduce size while keeping it responsive */
+  height: auto;
+  max-height: 400px;
+  margin-top: 30px;
+  margin-bottom: -10px;
+}
+
+.top-image {
+  max-width: 60%;
+  height: auto;
+  margin-bottom: 20px;
+}
+
+
+.img-button {
+  cursor: pointer;
+  width: 150px;  /* Adjust size as needed */
+  height: auto;
+  transition: transform 0.2s ease-in-out;
+}
+
+.img-button:hover {
+  transform: scale(1.05); /* Slight zoom effect */
+}
+
+
+
+
+@media (max-width: 768px) {
+  .healthfeature-section {
+    background-position: center top;
+    margin-top: 40px;
+  }
+
+  .text-content {
+    text-align: center;
+    margin-top: 30px; 
+   }
+
+  .top-image {
+    max-width: 70%; 
+  }
+
+  .health-right-image {
+    max-width: 50%; 
+  }
+}
+
+
+
+@media (max-width: 575px) {
+
+  /* .top-image {
+    padding-top: 20px;
+    margin-bottom: -60px;
+  } */
+
+  .top-image {
+    margin-top: -20px;
+    margin-bottom: 20px; /* 🔁 Increase this value */
+  }
+
+  .text-content {
+    margin-top: 10px; /* 🔁 Add if needed */
+  }
+
+  
+
+}
+
+@media (max-width: 1024px) {
+  .healthfeature-section {
+    
+    margin-top: 60px;
+  }
+
+}
+
+
+/* what is project guidance */
+
+.healthgrouped{
+  width: 60%;
+}
+
+
+.health-card {
+  border-radius: 16px;
+  height: 160px;
+  padding: 12px 14px;
+  
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top center;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  overflow: hidden;
+}
+
+

@@ -1,0 +1,204 @@
+.course-section {
+  position: relative;
+  padding: 20px 0;
+  background-color: white;
+  
+}
+
+/* Center heading properly */
+.section-heading {
+  text-align: center;
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+
+.light-text {
+  color: #666;
+  font-weight: normal;
+}
+
+.dark-text {
+  color: #222;
+  font-weight: bold;
+}
+
+.course-heading {
+  font-size: 20px;
+  font-weight: bold;
+  color: #20CB01;
+  margin-bottom: -10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  position: relative;
+  text-align: center;
+  /* background-image: url("../images/whystudysmart.png"); 
+  background-size: contain;
+  background-repeat: no-repeat; 
+  background-position: right center;
+  padding: 10px 30px; */
+  margin-top: 20px;
+  
+}
+
+
+
+/* Highlighted Text */
+.course-heading .highlight {
+  color: #070759;
+}
+
+/* Styled heading box */
+
+
+
+.heading-box {
+  /* background: url("../images/headingimg.png") no-repeat center center;
+  background-size: cover; */
+  padding: 10px 30px; /* Adjust padding to fit text inside */
+  display: inline-block;
+  font-weight: bold;
+  font-size: 18px;
+  color: #070759;
+  border: none; /* Remove border if any */
+  text-align: center;
+  min-width: 320px; /* Adjust as needed */
+  position: relative;
+}
+
+
+/* Content alignment */
+.content-box {
+  padding: 20px;
+  padding-left: 120px;  /* Added padding to shift content right */
+  position: relative;  /* Enable positioning for the image */
+  font-size: 16px;
+}
+
+/* Image styling */
+.image-container {
+  display: inline-block;
+  border-radius: 20px;
+  overflow: hidden;
+  padding: 10px;
+}
+
+/* Left-side image styling */
+.left-image {
+  position: absolute;
+  top: 10px;
+  left: -60px;
+  width: 50px;  /* Adjust size as needed */
+  height: auto;
+}
+
+
+
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .image-container {
+    width: 80%;
+  }
+
+  .courseimg-fluid{
+    width: 80%;
+  }
+
+  /* Stack content and image on smaller screens */
+  .row.align-items-center {
+    flex-direction: column-reverse;
+  }
+  
+  .content-box {
+    text-align: left;
+    padding-left: 20px;
+  }
+
+  .course-heading {
+    font-size: 20px !important;
+    margin-bottom: 10px;
+  }
+
+  .left-image {
+    position: static;  /* Reset positioning on smaller screens */
+    margin-bottom: 10px;  /* Add some space */
+  }
+
+  
+    .course-section .row {
+      flex-direction: row !important; /* Ensure image stays on left, text on right */
+    }
+
+    .course-btn-container {
+      margin-top: -20px;
+      margin-bottom: -40px;
+    }
+  
+}
+
+@media (max-width: 992px) {
+  .course-heading {
+    font-size: 30px;
+  }
+}
+
+
+
+@media (max-width: 576px) {
+  .course-heading {
+    font-size: 24px;
+    flex-direction: column;
+  }
+
+  /* Ensure correct stacking order */
+  .course-section .row {
+    flex-direction: column !important; /* Stack items vertically */
+  }
+
+  .content-box {
+    order: 3; /* Text should appear below the image */
+    text-align: left;
+    padding-left: 70px;
+    padding-right: 20px;
+  }
+
+  .image-container {
+    order: 2; /* Image should appear after the heading */
+    width: 80%;
+  }
+
+  .course-heading {
+    order: 1; /* Heading should appear first */
+    font-size: 28px;
+  }
+}
+
+
+@media (max-width: 1024px) {
+  .course-section {
+    margin-right: 20px;
+  }
+
+ 
+}
+
+
+
+.course-btn-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 0px;
+}
+
+.course-btn-img {
+  width: 200px; /* Adjust size */
+  transition: transform 0.3s ease-in-out;
+}
+
+.course-btn-img:hover {
+  transform: scale(1.1);
+}

@@ -1,0 +1,53 @@
+.side-img-large {
+  width: 100px;
+  height: auto;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.color-circle {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  display: inline-block;
+  margin-right: 5px;
+}
+
+
+/* Remove border from tab content */
+#productTabsContent {
+  border: none !important;
+  padding-top: 1rem;
+}
+
+/* Remove bottom border from nav-tabs */
+#productTabs.nav-tabs {
+  border-bottom: none !important;
+}
+
+/* Basic tab button styles */
+#productTabs .nav-link {
+  border: none !important;
+  background: transparent !important;
+  color: #333;
+  font-weight: normal;
+  position: relative;
+}
+
+/* Active tab: bold + underline */
+#productTabs .nav-link.active {
+  font-weight: bold;
+  color: #000;
+}
+
+#productTabs .nav-link.active::after {
+  content: "";
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: #000;
+}
+
+

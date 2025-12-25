@@ -1,0 +1,121 @@
+/* Section Styling */
+/* .why-choose-section {
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+  padding: 0px 20px 50px 20px;
+  background: #fff;
+} */
+
+.why-choose-section {
+  width: 100%;
+  padding: 0px 20px 50px 20px;
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+/* Heading Styling */
+.why-choose-title {
+  font-size: 20px;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-bottom: 40px;
+  color: #20CB01;
+  display: inline-block;
+  padding: 0px 30px;
+}
+
+.why-choose-title .highlight {
+  color: #070759;
+}
+
+/* Card Styling */
+.feature-card {
+  background: #1E5AFA0D;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+  height: 100%; /* Ensures equal height for all cards */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.feature-card:hover {
+  transform: translateY(-5px);
+}
+
+
+
+/* Center align the image */
+.feature-icon {
+  width: 100px !important;
+  height: 100px !important;
+  margin: 0 auto 15px auto; /* Centers image horizontally */
+  display: block; /* Ensures it behaves as a block element */
+}
+
+
+.feature-title {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 15px;
+  color: #070759;
+}
+
+.feature-list {
+  list-style: none;
+  padding: 0;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: flex-start; /* Aligns entire list to left */
+}
+
+.feature-list li {
+  display: grid;
+  grid-template-columns: auto 1fr; /* ✔ + text */
+  gap: 10px;
+  align-items: start;
+  max-width: 300px;
+  font-size: 14px;
+  color: #6A6969;
+  line-height: 1.6;
+}
+
+.feature-list li::before {
+  content: "✔";
+  color: green;
+  font-weight: bold;
+  display: inline-block;
+  margin-top: 2px;
+}
+
+
+
+
+/* @media (max-width: 576px) {
+  .feature-card {
+    margin-bottom: 20px;
+  }
+} */
+
+@media (max-width: 576px) {
+  .why-choose-section .col-12 {
+    margin-bottom: 20px;
+  }
+
+  .why-choose-section .col-12:last-child {
+    margin-bottom: 0;
+  }
+
+  .why-choose-title{
+    text-align: center;
+  }
+}

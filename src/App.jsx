@@ -1,0 +1,302 @@
+import { Routes, Route, useLocation, matchPath } from "react-router-dom";
+import ScrollToTop from "./pages/ScrollToTop";
+
+import Navbar from "./layouts/navbar";
+import Home from "./pages/Home/Home";
+import About from "./pages/About/About";
+import Contact from "./pages/Contact/Contact";
+import Pricing from "./pages/Pricing/Pricing";
+import "bootstrap/dist/css/bootstrap.min.css";
+import "bootstrap/dist/js/bootstrap.bundle.min";
+import "bootstrap-icons/font/bootstrap-icons.css";
+import "@fortawesome/fontawesome-free/css/all.min.css";
+import Footer from "./layouts/footer";
+import AdminLogin from "./pages/Admin/login/adminlogin";
+import Dashboard from "./pages/Admin/dashboard/dashboard";
+import NotFoundPage from "./pages/404page";
+import BlogAdmin from "./pages/Admin/blog/adminblog";
+import AddBlog from "./pages/Admin/blog/addblog";
+import EditBlog from "./pages/Admin/blog/editblog";
+import RefundPolicy from "./layouts/refundpolicy";
+import TermsAndConditions from "./layouts/termsandconditions";
+import TestimonialsAdmin from "./pages/Admin/tesimonials/admintestimonial";
+import AddTestimonials from "./pages/Admin/tesimonials/addtestimonial";
+import EditTestimonials from "./pages/Admin/tesimonials/edittestimonial";
+import PrivacyPolicy from "./layouts/privacypolicy";
+import Careers from "./layouts/careers";
+import Careerdetails from "./layouts/careerdetails";
+import UserContact from "./pages/Admin/usercontact/usercontact";
+import HomeEnquiry from "./pages/Admin/enquiry/homeenquiry";
+import WellnessEnquiry from "./pages/Admin/enquiry/wellnessenquiry";
+import OncallEnquiry from "./pages/Admin/enquiry/oncallenquiry";
+import Chatbot from "./layouts/chatbot";
+import { useEffect } from "react";
+// import chatbotIcon from "./assets/images/chatbot.png";
+// import SplashScreen from "./layouts/SplashScreen";
+import AdminCareers from "./pages/Admin/careers/AdminCareers";
+import AddCareers from "./pages/Admin/careers/Addcareers";
+import EditCareers from "./pages/Admin/careers/Editcareers";
+import JobApplication from "./pages/Admin/careers/Jobapplication";
+import Wellness from "./pages/Wellness/Wellness";
+import OnCallBanner from "./pages/Oncall/Oncall";
+import ShopSection from "./pages/Shop/Shop";
+import ShopDetails from "./pages/Shop/Shopdetails";
+import ProductDetails from "./pages/Shop/Productdetails";
+import ShoppingCart from "./pages/Shop/shoppingcart";
+import UpcomingFeatures from "./pages/UpcomingFeatures/Upcomingfeatures";
+import RemoveTrailingSlash from "./layouts/RemoveTrailingSlash";
+import OurTeam from "./pages/Ourteam/OurTeam";
+import AdminTeamMembers from "./pages/Admin/ourteam/teammembers/adminteammembers";
+import AddTeamMember from "./pages/Admin/ourteam/teammembers/addteammember";
+import EditTeamMember from "./pages/Admin/ourteam/teammembers/editteammembers";
+import AdminCategory from "./pages/Admin/ourteam/category/admincategory";
+import AddCategory from "./pages/Admin/ourteam/category/addcategory";
+import EditCategory from "./pages/Admin/ourteam/category/editcategory";
+import DataDeletion from "./layouts/datadeletion";
+import PricingDetails from "./pages/Pricing/PricingDetail";
+import LearnandEarn from "./pages/Home/Features/LearnandEarn";
+import SkillDevelopmentPage from "./pages/Home/Features/Skilldevelopment";
+import SportsTrainingPage from "./pages/Home/Features/Sportstraining";
+import OnlineTuitionPage from "./pages/Home/Features/OnlineTuition";
+import AiLearningPage from "./pages/Home/Features/Ailearning";
+import ProjectGuidance from "./pages/Home/Features/Projectguidance";
+import Healthandwellness from "./pages/Home/Features/Healthandwellness";
+import Parentsportal from "./pages/Home/Features/Parentsportal";
+import Scoreboard from "./pages/Home/Features/Scoreboard";
+import UnderConstruction from "./layouts/underconstruction";
+import ProtectedRoute from "./ProtectedRoute";
+
+import Terms from "./layouts/terms";
+
+const App = () => {
+  const location = useLocation(); // Get current route
+
+  // Define routes where Navbar/Footer should NOT appear
+  const adminRoutes = ["/admin/login", "/admin/login/dashboard"];
+
+  // Get the list of defined routes
+  const validRoutes = [
+    // "/home",
+    "/",
+    "/about-us",
+    "/contact-us",
+    "/pricing",
+    "/careers",
+    "/wellness-sports",
+    "/doctor-on-call",
+    "/online-shopping",
+    "/shopdetails",
+    "/productdetails",
+    "/upcoming-features",
+    "/pricingdetails",
+    "/our-team",
+    "/admin/login",
+    "/admin/login/dashboard",
+    "/refund-policy",
+    "/terms-and-conditions",
+    "/privacy-policy",
+    "/learn-earn",
+    "/skill-development",
+    "/sports-training",
+    "/online-tuition",
+    "/Ai-learning",
+    "/project-guidance",
+    "/health-wellness",
+    "/parents-portal",
+    "/scoreboard-rankings",
+  ];
+
+  // Check if the current route is a valid route
+  // const isValidRoute = validRoutes.includes(location.pathname);
+  const isValidRoute =
+    validRoutes.includes(location.pathname) ||
+    matchPath("/careers/:id", location.pathname);
+
+  // Chatbot State
+  // const [isChatbotOpen, setIsChatbotOpen] = useState(false);
+
+  useEffect(() => {
+    // 🔹 Ensure no horizontal scrolling
+    document.documentElement.style.overflowX = "hidden";
+    document.body.style.overflowX = "hidden";
+  }, []);
+
+  const hideChatbotRoutes = ["/terms"];
+
+  const isAdminRoute =
+    location.pathname.startsWith("/admin") ||
+    location.pathname.startsWith("/blog") ||
+    location.pathname.startsWith("/testimonials") ||
+    location.pathname.startsWith("/addtestimonials") ||
+    location.pathname.startsWith("/edittestimonials/:id") ||
+    location.pathname.startsWith("/editblog/:id") ||
+    location.pathname.startsWith("/usercontact") ||
+    location.pathname.startsWith("/AdminCareers") ||
+    location.pathname.startsWith("/JobApplication") ||
+    location.pathname.startsWith("/AddCareers") ||
+    location.pathname.startsWith("/EditCareers/:id") ||
+    location.pathname.startsWith("/enquiry/home") ||
+    location.pathname.startsWith("/enquiry/wellness") ||
+    location.pathname.startsWith("/enquiry/oncall") ||
+    location.pathname.startsWith("/ourteam");
+    
+
+  const shouldShowChatbot =
+    !isAdminRoute && !hideChatbotRoutes.includes(location.pathname);
+
+  return (
+    <>
+      <RemoveTrailingSlash />
+      <ScrollToTop />
+      {/* <Chatbot /> */}
+      {shouldShowChatbot && <Chatbot />}
+
+      {/* Show Navbar and Footer only if the current route is valid and not admin routes */}
+      {!adminRoutes.includes(location.pathname) && isValidRoute && <Navbar />}
+
+      <Routes>
+        {/* <Route path="/" element={<SplashScreen />} /> */}
+        <Route path="/" element={<Home />} />
+        <Route path="/about-us" element={<About />} />
+        <Route path="/contact-us" element={<Contact />} />
+        <Route path="/pricing" element={<Pricing />} />
+        {/* <Route path="/careers" element={<Careers />} /> */}
+        <Route path="/careers" element={<Careers />} />
+        <Route path="/careers/:id" element={<Careerdetails />} />
+        <Route path="/wellness-sports" element={<Wellness />} />
+        <Route path="/doctor-on-call" element={<OnCallBanner />} />
+        <Route path="/online-shopping" element={<ShopSection />} />
+        <Route path="/shopdetails" element={<ShopDetails />} />
+        <Route path="/productdetails" element={<ProductDetails />} />
+        <Route path="/shopping-cart" element={<ShoppingCart />} />
+        <Route path="/upcoming-features" element={<UpcomingFeatures />} />
+        <Route path="/learn-earn" element={<LearnandEarn />} />
+        <Route path="/skill-development" element={<SkillDevelopmentPage />} />
+        <Route path="/sports-training" element={<SportsTrainingPage />} />
+        <Route path="/online-tuition" element={<OnlineTuitionPage />} />
+        <Route path="/Ai-learning" element={<AiLearningPage />} />
+        <Route path="/project-guidance" element={<ProjectGuidance />} />
+        <Route path="/health-wellness" element={<Healthandwellness />} />
+        <Route path="/parents-portal" element={<Parentsportal />} />
+        <Route path="/scoreboard-rankings" element={<Scoreboard />} />
+        <Route path="/under-construction" element={<UnderConstruction />} />
+        <Route path="/refund-policy" element={<RefundPolicy />} />
+        <Route path="/terms-and-conditions" element={<TermsAndConditions />} />
+        <Route path="/privacy-policy" element={<PrivacyPolicy />} />
+        <Route path="/our-team" element={<OurTeam />} />
+        <Route path="/datadeletion" element={<DataDeletion />} />
+        <Route path="/pricingdetails" element={<PricingDetails />} />
+        <Route path="/admin/login" element={<AdminLogin />} />
+
+        <Route path="/terms" element={<Terms />} />
+
+        <Route
+          path="/admin/login/dashboard"
+          element={<ProtectedRoute element={<Dashboard />} />}
+        />
+        <Route
+          path="/blog"
+          element={<ProtectedRoute element={<BlogAdmin />} />}
+        />
+        <Route
+          path="/admin/addblog"
+          element={<ProtectedRoute element={<AddBlog />} />}
+        />
+        {/* <Route
+          path="/careers/:id"
+          element={<ProtectedRoute element={<Careerdetails />} />}
+        /> */}
+
+        <Route
+          path="/testimonials"
+          element={<ProtectedRoute element={<TestimonialsAdmin />} />}
+        />
+        <Route
+          path="/addtestimonials"
+          element={<ProtectedRoute element={<AddTestimonials />} />}
+        />
+        <Route
+          path="/edittestimonials/:id"
+          element={<ProtectedRoute element={<EditTestimonials />} />}
+        />
+        <Route
+          path="/editblog/:id"
+          element={<ProtectedRoute element={<EditBlog />} />}
+        />
+        <Route
+          path="/usercontact"
+          element={<ProtectedRoute element={<UserContact />} />}
+        />
+        <Route
+          path="/AdminCareers"
+          element={<ProtectedRoute element={<AdminCareers />} />}
+        />
+        <Route
+          path="/JobApplication"
+          element={<ProtectedRoute element={<JobApplication />} />}
+        />
+        <Route
+          path="/AddCareers"
+          element={<ProtectedRoute element={<AddCareers />} />}
+        />
+        <Route
+          path="/EditCareers/:id"
+          element={<ProtectedRoute element={<EditCareers />} />}
+        />
+        <Route
+          path="/enquiry/home"
+          element={<ProtectedRoute element={<HomeEnquiry />} />}
+        />
+
+        <Route
+          path="/enquiry/wellness"
+          element={<ProtectedRoute element={<WellnessEnquiry />} />}
+        />
+
+        <Route
+          path="/enquiry/oncall"
+          element={<ProtectedRoute element={<OncallEnquiry />} />}
+        />
+
+        <Route
+          path="/ourteam/adminteammmembers"
+          element={<ProtectedRoute element={<AdminTeamMembers />} />}
+        />
+
+        <Route
+          path="/ourteam/addmember"
+          element={<ProtectedRoute element={<AddTeamMember />} />}
+        />
+
+        <Route
+          path="/ourteam/editmember/:id"
+          element={<ProtectedRoute element={<EditTeamMember />} />}
+        />
+
+        <Route
+          path="/ourteam/category"
+          element={<ProtectedRoute element={<AdminCategory />} />}
+        />
+
+        <Route
+          path="/ourteam/addcategory"
+          element={<ProtectedRoute element={<AddCategory />} />}
+        />
+
+        <Route
+          path="/ourteam/editcategory"
+          element={<ProtectedRoute element={<EditCategory />} />}
+        />
+
+        {/* Catch-all route for 404 */}
+        <Route path="*" element={<NotFoundPage />} />
+      </Routes>
+
+      {/* Show Footer only if the current route is valid and not admin routes */}
+      {!adminRoutes.includes(location.pathname) && isValidRoute && <Footer />}
+    </>
+  );
+};
+``;
+
+export default App;

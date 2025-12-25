@@ -1,0 +1,642 @@
+.oncall-banner {
+  background-size: cover;
+  background-position: center;
+  min-height: 350px;
+  padding: 80px 0;
+  position: relative;
+
+}
+
+/* Ensure the text does not overlap the image */
+.oncall-banner .container {
+  position: relative;
+  z-index: 2;
+}
+
+.oncall-banner .row {
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 40px;
+}
+
+/* Doctor Image - Always stays on the right for large screens */
+.doctor-img {
+  position: absolute;
+  right: 5%;
+  bottom: 0;
+  max-height: 90%;
+  width: auto;
+}
+
+
+.enquiry-section .enquiry-content h2 {
+  margin-top: -150px !important;
+  padding-bottom: 10px;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 1024px) {
+  .oncall-banner {
+    min-height: 400px;
+    padding: 60px 20px;
+  }
+
+  .doctor-img {
+    width: 40%;
+    right: 5%;
+    bottom: 0;
+  }
+}
+
+@media (max-width: 768px) {
+  /* Stack image on top and text below */
+  .oncall-banner .row {
+    flex-direction: column-reverse;
+    text-align: center;
+  }
+
+  .oncall-banner .col-lg-6 {  
+    width: 100%;
+    margin-left: -20px;
+    margin-top: 30px;
+    
+  }
+
+  .doctor-img {
+    position: relative;
+    width: 50%;
+    height: 320px;
+    right: auto;
+    left: auto;
+    transform: none;
+    margin: 0 auto -210px auto;
+  }
+
+  .oncall-banner {
+    min-height: 350px; /* Adjusted height for mobile */
+    padding: 40px 20px;
+  }
+
+  .enquiry-section .enquiry-content h2 {
+    margin-top: 10px !important;
+    padding-bottom: 10px;
+  }
+
+  .gap-2 {
+    
+    margin-left: 25px;
+}
+}
+
+
+/* why book */
+
+.heading-text {
+  color: #20cb01; /* Green color */
+  text-align: center;
+  display: block;
+  width: 100%;
+  margin: 0 auto;
+}
+
+
+
+
+
+.why-book-with-us {
+  max-width: 70%;
+  margin: auto;
+}
+
+/* Reduce the overall image size */
+.why-book-with-us img {
+  max-width: 70%;
+  height: auto;
+  display: block;
+  margin: auto;
+}
+
+/* Adjust individual image sizes */
+.large-img {
+  width: 60%; /* Reduce top image size */
+  margin-bottom: 10px; /* Reduce space below */
+}
+
+.small-img {
+  width: 30%;
+  margin: 0 2px; /* Add margin to bring images closer */
+}
+
+@media (max-width: 991px) {
+  /* Apply column-reverse for mobile & tablet */
+  .why-book-with-us .row {
+    flex-direction: column-reverse;
+  }
+
+  /* Center text for smaller screens */
+  .text-left {
+    text-align: center !important;
+  }
+}
+
+@media (max-width: 768px) {
+.enqbtn{
+  text-align: center;
+  
+}
+
+.enquire-wrapper {
+  display: flex;
+  justify-content: center;
+ 
+}
+
+
+
+.center-enquire-btn {
+  margin-left: 40px;
+}
+
+
+
+/* .py-5 img {
+  width: 250px;
+} */
+
+.img-fluid{
+  width: 60%;
+}
+
+.img-fluid.small-img{
+  width: 35%;
+}
+
+}
+
+@media (max-width: 1024px) {
+.why-book-with-us img {
+  max-width: 80%;
+  height: auto;
+  display: block;
+  margin: auto;
+}
+
+
+/* Adjust individual image sizes */
+.large-img {
+  width: 70%; /* Reduce top image size */
+  margin-bottom: 10px; /* Reduce space below */
+  margin-top:-50px;
+}
+
+.small-img {
+  width: 35%;
+  margin: 0 2px; /* Add margin to bring images closer */
+}
+}
+
+
+/* Timeline Line */
+
+/* .timeline-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.timeline-wrapper {
+  max-width: 1200px; 
+  margin: auto;
+}
+
+.timeline-line {
+  position: absolute;
+  left: 50%;
+  top: 0;
+  bottom: 0;
+  width: 4px;
+  background-color: #d1d1d1;
+  transform: translateX(-50%);
+}
+
+
+
+.timeline-star {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 30px;
+  height: 30px;
+  object-fit: contain;
+  z-index: 2;
+}
+
+
+
+.timeline-item {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 40px;
+}
+
+.timeline-content {
+  max-width: 90%;
+  margin: auto;
+}
+
+
+@media (max-width: 992px) {
+  .timeline-item {
+    flex-direction: column !important;
+    text-align: center;
+  }
+
+  .timeline-line {
+    left: 50%;
+  }
+
+  .timeline-star {
+    left: 50%;
+  }
+}
+
+
+@media (max-width: 768px) {
+  .timeline-item {
+    flex-direction: column !important;
+    text-align: center;
+  }
+
+  .timeline-line {
+    left: 30px;
+  }
+
+  
+
+  .timeline-star {
+    left: 15px;
+  }
+} */
+
+.timeline-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Wrapper for the timeline */
+.timeline-wrapper {
+  max-width: 1200px;
+  margin: auto;
+  position: relative;
+}
+
+/* Timeline vertical line */
+.timeline-line {
+  position: absolute;
+  left: 50%;
+  top: 0;
+  bottom: 0;
+  width: 4px;
+  background-color: #d1d1d1;
+  transform: translateX(-50%);
+}
+
+/* Star in the middle of the timeline */
+.timeline-star {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 30px;
+  height: 30px;
+  object-fit: contain;
+  z-index: 2;
+}
+
+/* Timeline item (Text & Image Container) */
+.timeline-item {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+/* Text & Image Box */
+.timeline-content {
+  max-width: 90%;
+  margin: auto;
+}
+
+/* ✅ Mobile-Specific Adjustments */
+/* @media (max-width: 768px) {
+  
+  .timeline-item img:not(.timeline-icon) {
+    display: none !important;
+  }
+
+  .timeline-section{
+    margin-top: -10px;
+  }
+
+  .timeline-line {
+    display: none;
+    left: 50%;
+  }
+
+  .timeline-star {
+    display: none;
+  }
+
+  
+  .timeline-item {
+    flex-direction: column !important;
+    text-align: center;
+    
+    margin-bottom: -20px;
+  }
+
+  
+  .timeline-icon {
+    display: block !important;
+    margin: 0 auto 10px;
+    width: 50px;
+    height: 50px;
+  }
+
+  
+  .timeline-content h4 {
+    font-size: 1.2rem;
+    font-weight: bold;
+  }
+
+  .timeline-content p {
+    font-size: 1rem;
+    color: #555;
+  }
+} */
+
+
+@media (max-width: 768px) {
+  /* Stack items vertically */
+  .timeline-item {
+    flex-direction: column !important;
+    text-align: center;
+    margin-bottom: -20px;
+  }
+
+  .timeline-section{
+    margin-top: -30px;
+  }
+
+  /* Make all columns take full width */
+  .timeline-item > div {
+    width: 100% !important;
+    max-width: 100% !important;
+    padding: 0 !important;
+  }
+
+  /* Hide images and timeline star */
+  .timeline-item img:not(.timeline-icon) {
+    display: none !important;
+  }
+
+  .timeline-line,
+  .timeline-star {
+    display: none !important;
+  }
+
+  .timeline-icon {
+    display: block !important;
+    margin: 0 auto 10px;
+    width: 50px;
+    height: 50px;
+  }
+
+  .timeline-content {
+    padding: 0 10px;
+  }
+
+  .timeline-content h4 {
+    font-size: 1.1rem;
+    font-weight: bold;
+  }
+
+  .timeline-content p {
+    font-size: 0.95rem;
+    color: #555;
+  }
+
+  .large-img {
+    
+    margin-top: 10px;
+  }
+  
+}
+
+
+
+
+/* enquiry */
+
+
+
+.enquiry-section .container {
+  max-width: 1200px;
+}
+
+.enquiry-section .form-control {
+  border-radius: 5px;
+  padding: 12px;
+}
+
+.enquiry-section .btn-warning {
+  background-color: #ff9800;
+  border: none;
+  padding: 12px;
+  border-radius: 5px;
+}
+
+.enquiry-section .btn-warning:hover {
+  background-color: #e68900;
+}
+
+.enquire-btn {
+  width: 400px !important; /* or any value you prefer */
+  display: block;
+  margin: 0 auto; /* to center it */
+  align-items: center;
+}
+
+/* Responsive Fix */
+@media (max-width: 992px) { /* Tablets and smaller */
+  .enquiry-content {
+    display: flex;
+    flex-direction: column; /* Stack items */
+    text-align: center;
+  }
+
+  .enquiry-content .col-lg-5,
+  .enquiry-content .col-lg-7 {
+    width: 100%; /* Full width */
+  }
+
+  .enquiry-content .col-lg-5 {
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 768px) { /* Mobile */
+  .enquiry-content {
+    padding: 0 15px; /* Avoid touching screen edges */
+  }
+
+  /* .enquiry-content .col-lg-5 {
+    margin-top: 30px;
+  } */
+
+  .enquiry-content {
+    margin-top: -50px;
+  }
+
+  .enquire-btn {
+    width: 200px !important; /* or any value you prefer */
+    display: block;
+    margin: 0 auto; /* to center it */
+  }
+
+  .oncall-book{
+    text-align: justify;
+    margin-left: 40px;
+  }
+
+  
+
+  
+
+  
+}
+
+
+
+/* testimonial */
+
+/* Equal height card styling */
+.testimonial-card {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 30px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.testimonial-card p {
+  flex-grow: 1; /* Push button or end content to bottom */
+}
+
+
+/* review section */
+.review-section {
+  margin-top: -30px;
+  margin-bottom: 10px;
+}
+
+
+
+/* for popup notification */
+
+/* .popup {
+  position: fixed;
+  top: 80px;
+  right: 20px;
+  background-color: #070759;
+  color: white;
+  padding: 12px 20px;
+  border-radius: 6px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+  z-index: 1000;
+  animation: fadeInOut 3s ease-in-out;
+} */
+
+
+
+.popup {
+  position: fixed;
+  top: 80px;
+  right: 20px;
+  background-color: #070759;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 6px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  z-index: 9999;
+  animation: fadeInOut 3s ease-in-out;
+  display: inline-block;
+  max-width: fit-content;
+  width: auto;
+  white-space: nowrap;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+
+
+
+@keyframes fadeInOut {
+  0% { opacity: 0; transform: translateY(-10px); }
+  10% { opacity: 1; transform: translateY(0); }
+  90% { opacity: 1; }
+  100% { opacity: 0; transform: translateY(-10px); }
+}
+
+
+
+
+/* Fix for phone input */
+.phone-wrapper {
+  width: 100%;
+}
+
+/* for displaying 91 */
+.phone-container {
+  display: flex;
+  align-items: center;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 5px;
+  width: 100%;
+}
+
+.phone-prefix {
+  background: #f1f1f1;
+  padding: 8px 12px;
+  border-right: 1px solid #ccc;
+  font-weight: bold;
+  border-radius: 5px 0 0 5px;
+}
+
+.phone-input {
+  border: none;
+  outline: none;
+  flex: 1;
+  padding: 8px;
+}
+
+
+@media (max-width: 768px) {
+  .doc-ban{
+    margin-top: 20px;
+  }
+
+  .doc-enq-text{
+    text-align: justify;
+  }
+
+}
+

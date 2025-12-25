@@ -1,0 +1,43 @@
+@media (max-width: 1024px) {
+  .custom-featuresheading {
+    margin-bottom: -40px !important;
+  }
+}
+
+
+@keyframes pulseIcon {
+  0% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  50% {
+    transform: scale(1.15);
+    opacity: 0.8;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+.icon-animate {
+  animation: pulseIcon 1.5s infinite ease-in-out;
+}
+
+
+
+@media (max-width: 575px) {
+  .feature-card-wrapper {
+    width: 100%;
+  }
+}
+@media (min-width: 1024px) {
+   .feature-card-sec{
+        
+        min-width: 1050px;
+
+   }
+
+   
+}
+

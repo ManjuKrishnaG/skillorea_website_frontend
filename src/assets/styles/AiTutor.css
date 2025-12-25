@@ -1,0 +1,135 @@
+
+
+
+/* TUTOR SECTION */
+
+
+.tutor-title {
+  font-size: 20px;
+  font-weight: bold;
+  color: #2F52DF
+}
+
+.tutor-text {
+  font-size: 16px;
+  color: #6A6969;
+  margin-bottom: 20px;
+}
+
+.tutor-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.future {
+  color: #070759;
+}
+
+.titlecolor{
+  color:#F48616;
+  font-size: 22px;
+}
+
+.tutor-list li {
+  font-size: 16px;
+  color: #1D1D1D;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.tutor-list li i {
+  font-size: 20px;
+  margin-right: 10px;
+  color: #FFBB00; /* Customize icon color */
+}
+
+.tutors-section {
+  position: relative; /* Needed for absolute positioning of triangle */
+  padding: 60px 0;
+  overflow: hidden; /* Ensures no extra spacing */
+  margin-top: 20px;
+}
+
+/* Background Triangle */
+.triangle-bg {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 250px; /* Adjust size */
+  height: auto;
+  z-index: -1; /* Pushes it behind the content */
+}
+
+/* Tutor Image */
+.tutor-img {
+  max-width: 100%;
+  display: block;
+  margin: auto;
+  position: relative; /* Keeps it above the triangle */
+  z-index: 2; /* Ensures it stays above the triangle */
+}
+
+
+
+.dotted-bg {
+  position: absolute;
+  right: -50px; /* Move further right */
+  top: 50%;
+  transform: translateY(-50%); /* Keep it centered vertically */
+  z-index: 1; /* Ensure it's visible */
+  pointer-events: none; /* Prevent unwanted interactions */
+}
+
+.dotted-bg img {
+  max-width: 150px; /* Adjust if needed */
+  height: auto;
+  opacity: 0.5;
+}
+
+
+.tutor-btn-img {
+  margin-top: 20px;
+}
+
+
+.tutor-btn-container {
+  margin-top: 10px;
+  display: flex;
+}
+
+.tutor-btn-img {
+  width: auto;
+  max-width: 100%;
+  height: auto;
+}
+
+.tutor-content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; /* Aligns both list and button */
+}
+
+
+@media (max-width: 576px) {
+  .tutor-img {
+    display: none;
+  }
+
+
+}
+
+
+
+@media (max-width: 768px) {
+
+.tutors-section {
+  top: -20px;
+
+}
+}
+
+
+

@@ -1,0 +1,82 @@
+.tuitiongrouped{
+  width: 70%;
+}
+
+@media (max-width: 768px) {
+.tuitiongrouped{
+  width: 50%;
+}
+
+.online-tuition-para{
+  text-align: justify;
+}
+
+.online-tuition-heading{
+  padding-bottom: 20px;
+}
+
+.elevate-section{
+  margin-top: -40px;
+}
+
+.elevate-points{
+  margin-top: -10px;
+}
+
+.academic-success{
+  margin-top: -30px;
+}
+
+.academy-img{
+  width: 50%;
+}
+
+}
+
+@media (max-width: 575px) {
+.tuitiongrouped{
+  width: 70%;
+}
+
+}
+
+
+/*  skillorea online tuition    */
+
+/* For exactly 1024px screen width: stack image and text vertically */
+@media (width: 1024px) {
+  .online-tuition-layout {
+    display: flex !important;
+    flex-direction: column !important;
+  }
+
+  .online-tuition-layout > .col-lg-6 {
+    width: 100% !important;
+    max-width: 100% !important;
+    flex: 0 0 100% !important;
+  }
+
+  .tuitiongrouped{
+    width: 40%;
+    margin-bottom: 20px;
+  }
+
+  .online-tuition-heading{
+    margin-bottom: 30px!important;
+  }
+
+  .online-tuition-academic-layout {
+    display: flex !important;
+    flex-direction: column !important;
+  }
+
+  .online-tuition-academic-layout > .col-lg-6 {
+    width: 100% !important;
+    max-width: 100% !important;
+    flex: 0 0 100% !important;
+  }
+
+  .academy-img{
+    width: 40%;
+  }
+}

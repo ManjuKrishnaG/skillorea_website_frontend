@@ -1,0 +1,24 @@
+.data-deletion-wrapper .section {
+  background-color: #f8f9fa;
+  border-radius: 8px;
+  padding: 1.5rem;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.03);
+  border: none;
+}
+
+.section {
+  width: 100%;
+  padding: 1.5rem;
+  border-radius: 8px;
+  background-color: #f8f8f8;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+}
+
+.data-title{
+  color: #20CB01;
+  font-weight: bold;
+}
+
+.data-title .highlight {
+  color: #070759;
+}

@@ -1,0 +1,40 @@
+@media (max-width: 768px) {
+  .tablet-center {
+    text-align: center !important;
+  }
+}
+
+
+
+@media (max-width: 768px) {
+  .skilloreabanner-section h2,
+  .skilloreabanner-section h5,
+  .skilloreabanner-section p {
+    font-size: 16px;
+  }
+
+  .skilloreabanner-section img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .store-buttons {
+    flex-direction: column !important;
+    align-items: center !important;
+    margin-left: 0 !important;
+    gap: 10px;
+    margin-bottom: 80px;
+  }
+
+  .app-store-btn{
+    margin-top: -10px;
+  }
+}
+
+@media (max-width: 575px) {
+  .skilloreabannerlogo{
+    width: 150px;
+    margin-bottom: 20px;
+  }
+}
+

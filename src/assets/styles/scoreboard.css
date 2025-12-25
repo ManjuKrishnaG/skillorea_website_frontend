@@ -1,0 +1,146 @@
+.scoreboardfeature-section {
+  background-size: cover; /* Ensures the background image covers the section */
+  background-position: center; /* Centers the background */
+  background-repeat: no-repeat; 
+  max-height: 600px; 
+  display: flex;
+  align-items: center;
+  padding: 80px 0;
+  overflow-x: hidden!important;
+}
+
+.scoreboard-right-image {
+  max-width: 70%; /* Reduce size while keeping it responsive */
+  height: auto;
+  max-height: 400px;
+  margin-top: 30px;
+  margin-bottom: -10px;
+}
+
+.top-image {
+  max-width: 60%;
+  height: auto;
+  margin-bottom: 20px;
+}
+
+
+.img-button {
+  cursor: pointer;
+  width: 150px;  /* Adjust size as needed */
+  height: auto;
+  transition: transform 0.2s ease-in-out;
+}
+
+.img-button:hover {
+  transform: scale(1.05); /* Slight zoom effect */
+}
+
+
+
+
+@media (max-width: 768px) {
+  .scoreboardfeature-section {
+    background-position: center top;
+    margin-top: 40px;
+  }
+
+  .text-content {
+    text-align: center;
+    margin-top: 30px; 
+   }
+
+  .top-image {
+    max-width: 70%; 
+  }
+
+  .scoreboard-right-image {
+    max-width: 50%; 
+  }
+}
+
+
+
+@media (max-width: 575px) {
+
+  /* .top-image {
+    padding-top: 20px;
+    margin-bottom: -60px;
+  } */
+
+  .top-image {
+    margin-top: -20px;
+    margin-bottom: 20px; /* 🔁 Increase this value */
+  }
+
+  .text-content {
+    margin-top: 10px; /* 🔁 Add if needed */
+  }
+
+  
+
+}
+
+@media (max-width: 1024px) {
+  .scoreboardfeature-section {
+    
+    margin-top: 60px;
+  }
+
+}
+
+
+/* what is project guidance */
+
+.scoreboardgrouped{
+  width: 60%;
+}
+
+
+/* why scoreboard */
+
+.score-card {
+  background: linear-gradient(to bottom right, #f4f7fd, #fdf9f3);
+  border-radius: 16px;
+  padding: 20px;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.08);
+  color: #070759;
+}
+
+.score-card:hover {
+  background-color: #070759 !important;
+  color: #fff !important;
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.2);
+}
+
+.score-card:hover h6,
+.score-card:hover p {
+  color: #fff !important;
+}
+
+
+
+/* scoreboard features */
+
+.score-card {
+  background: linear-gradient(to bottom right, #f4f7fd, #fdf9f3);
+  border-radius: 20px;
+  padding: 25px;
+  height: 100%;
+  color: #070759;
+  text-align: left;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+}
+
+.score-card:hover {
+  background: none !important; /* remove the gradient */
+  background-color: #070759 !important; /* solid dark blue */
+  color: #fff !important;
+}
+
+.score-card:hover h4,
+.score-card:hover h6,
+.score-card:hover p {
+  color: #fff !important;
+}

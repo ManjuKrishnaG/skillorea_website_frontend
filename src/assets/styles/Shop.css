@@ -1,0 +1,638 @@
+.shop-section {
+  width: 100%;
+  text-align: center;
+  position: relative;
+  padding-bottom: 100px; /* Space for overlapping images */
+}
+
+/* Banner Styling */
+.banner-container {
+  width: 80%; /* Banner occupies 80% of the screen width */
+  height: 400px; /* Increased height */
+  border-radius: 20px; /* Rounded corners on all sides */
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.banner-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ensures full visibility of the banner image */
+  border-radius: 20px; /* Rounded borders on top and bottom */
+  margin-top: 170px;
+}
+
+/* Feature Images Styling */
+.feature-container {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  position: absolute;
+  bottom: -70px; /* Adjusted to overlap properly */
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+
+
+.feature-img {
+  width: 200px; /* Increased size */
+  height: auto;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 992px) {
+  .feature-img {
+    width: 140px; /* Adjust for tablets */
+  }
+}
+
+@media (max-width: 768px) {
+  .banner-container {
+    width: 100%; /* Make the banner fit better on smaller screens */
+    height: 300px; /* Adjust banner height */
+  }
+
+  .feature-container {
+    position: absolute; /* Keep horizontal format on mobile */
+    display: flex;
+    flex-direction: row; /* Keep images in a row */
+    align-items: center;
+    gap: 15px;
+    padding-top: -50px; /* Space below the banner */
+  }
+
+  .feature-img {
+    width: 80px; /* Adjust image size for mobile */
+    margin-top: -50px;
+  }
+
+  .feature-box{
+    margin-top: -180px;
+  }
+}
+
+
+/* product section */
+
+/* Products Section */
+
+.product-section-header {
+  width: 100%;
+  padding: 0 20px;
+  margin-bottom: 30px;
+  flex-wrap: wrap;
+}
+
+/* Search Box Styling */
+.search-input {
+  width: 280px;
+  max-width: 100%;
+  height: 36px;
+  font-size: 14px;
+}
+
+/* Icon Styling */
+.wishlist-icon, .cart-icon {
+  font-size: 20px;
+  cursor: pointer;
+  color: #333;
+}
+
+.wishlist-icon:hover, .cart-icon:hover {
+  color: #007bff;
+}
+
+.products-section {
+  text-align: center;
+  margin: 80px 0 50px; /* Added top margin for spacing */
+}
+
+/* Section Heading */
+.products-section h2 {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 30px; /* Increased bottom margin */
+}
+
+/* Products Container */
+.products-container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start; /* Ensures text alignment */
+  flex-wrap: wrap;
+  gap: 40px;
+}
+
+/* Individual Product */
+.product {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  min-width: 120px; /* Ensures uniform width */
+}
+
+/* Product Images */
+.product img {
+  width: 100px; /* Set equal size */
+  height: 100px; /* Ensures consistency */
+  object-fit: contain; /* Prevents distortion */
+  transition: transform 0.3s ease;
+}
+
+.product img:hover {
+  transform: scale(1.1);
+}
+
+/* Product Names */
+.product p {
+  margin-top: 10px;
+  font-size: 16px;
+  font-weight: 500;
+  min-height: 24px; /* Keeps text aligned */
+}
+
+.search-icons-container {
+  margin-bottom: 10px;
+  width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.search-input {
+  width: 280px;
+  max-width: 100%;
+  height: 36px;
+  font-size: 14px;
+}
+.search-icons input {
+  width: 300px;
+}
+
+.search-icons {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.wishlist-icon,
+.cart-icon {
+  font-size: 20px;
+  cursor: pointer;
+  color: #333;
+}
+
+.wishlist-icon:hover,
+.cart-icon:hover {
+  color: #007bff;
+}
+
+.heading-search-wrapper {
+  padding: 0 20px;
+  flex-wrap: wrap;
+}
+
+/* Make sure the heading aligns properly on desktop */
+.heading-search-wrapper h2 {
+  font-size: 24px;
+  font-weight: bold;
+  margin: 0;
+}
+
+
+.heading-text {
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+  padding-top: 40px;  /* space above */
+  padding-bottom: 30px;  /* space below */
+}
+
+.products-section-title {
+  font-size: 20px;
+  color: #20CB01;
+  margin-bottom: 40px;
+  font-weight: bold;
+  /* background-image: url("../images/whystudysmart.png");  */
+  background-size: contain; 
+  background-repeat: no-repeat; 
+  background-position: right center; 
+}
+
+.products-section-title .highlight {
+  color: #070759; 
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .products-container {
+    gap: 30px;
+    
+  }
+
+  .product img {
+    width: 90px;
+    height: 90px;
+  }
+
+  .products-section-title{
+    margin-top: -70px !important;
+  }
+
+  .product-section-header {
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    
+  }
+
+  .search-icons-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  /* .search-icons {
+    align-self: flex-end;
+  } */
+
+  .search-icons input {
+    width: 200px;
+  }
+
+  .heading-search-wrapper {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .heading-search-wrapper h2 {
+    text-align: center;
+    margin-bottom: 15px;
+  }
+
+  .search-icons {
+    justify-content: center;
+  }
+  .search-input {
+    width: 220px;
+  }
+}
+
+
+
+
+
+@media (max-width: 480px) {
+  .products-container {
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .product img {
+    width: 80px;
+    height: 80px;
+  }
+
+  .product p {
+    font-size: 14px;
+  }
+
+  .search-icons input {
+    width: 200px;
+  }
+}
+
+@media (max-width: 768px) and (min-width: 600px) {
+  .products-container {
+    flex-wrap: nowrap;         /* Keep items in a single row */
+    gap: 10px;                 /* Reduce spacing between items */
+    /*overflow-x: auto;           Allow horizontal scroll if needed */
+    justify-content: flex-start; /* Align items from the left */
+    padding: 0 10px;
+  }
+
+  .product img {
+    width: 70px;
+    height: 70px;
+  }
+
+  .product p {
+    font-size: 14px;
+  }
+}
+
+
+
+/* new arrivals */
+
+.new-arrivals-section {
+  margin: 60px 0;
+  text-align: center;
+}
+
+.product-box {
+  width: 220px; /* increased size */
+}
+
+.arivals-title {
+  font-size: 20px;
+  color: #20CB01;
+  margin-bottom: 40px;
+  font-weight: bold;
+  /* background-image: url("../images/whystudysmart.png");  */
+  background-size: contain; 
+  background-repeat: no-repeat; 
+  background-position: right center; 
+}
+
+.arivals-title .highlight {
+  color: #070759; 
+}
+
+.product-img {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+  transition: transform 0.3s ease;
+}
+
+.product-img:hover {
+  transform: scale(1.05);
+}
+
+.name-rating {
+  font-size: 14px;
+}
+
+.product-name {
+  font-weight: 500;
+  white-space: nowrap;
+}
+
+.rating {
+  font-size: 13px;
+  color: #f8c200;
+  white-space: nowrap;
+}
+
+.price-cart {
+  margin-top: 5px;
+  font-size: 13px;
+}
+
+.price {
+  font-weight: 600;
+}
+
+.original-price {
+  text-decoration: line-through;
+  color: gray;
+  font-size: 12px;
+  margin-left: 4px;
+}
+
+.add-to-bag {
+  background: #ff7f00;
+  color: white;
+  border: none;
+  padding: 4px 10px;
+  font-size: 12px;
+  border-radius: 6px;
+  cursor: pointer;
+  padding-left: 4px;
+}
+
+.add-to-bag:hover {
+  background: #e86800;
+}
+
+.view-all {
+  margin-top: 30px;
+  font-weight: bold;
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+@media (max-width: 1024px) {
+  .product-box {
+    width: 170px;
+  }
+
+  .add-to-bag {
+    font-size: 10px;
+  }
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .product-box {
+    width: 150px;
+  }
+
+  .arivals-title {
+    margin-top: -20px;
+  }
+
+
+  .product-img {
+    width: 100%;
+    
+  }
+
+  .product-name,
+  .rating,
+  .price,
+  .original-price {
+    font-size: 9px;
+  }
+
+  .add-to-bag {
+    padding: 3px 8px;
+    font-size: 11px;
+  }
+}
+
+
+/* banner */
+
+/* Wrapper to center and control banner width */
+.promo-banner-wrapper {
+  background-color: #101c3c; /* fallback if image fails */
+  background-image: url('../../assets/images/shopnowbanner.png'); /* your background */
+  background-size: cover;
+  background-position: center;
+  padding: 30px 0;
+}
+
+/* Actual banner area */
+.promo-banner {
+  max-width: 1200px; /* Reduces overall width */
+  width: 60%;
+  padding: -40px -20px;
+  color: white;
+}
+
+/* Text Styles */
+.text-section .small-text {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.text-section .main-heading {
+  font-size: 36px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.discount-text {
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.shop-btn {
+  background-color: #00b300;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  font-weight: 600;
+  border-radius: 4px;
+}
+
+.shop-btn:hover {
+  background-color: #009900;
+}
+
+/* Image styles */
+.promo-image {
+  max-width: 500px;
+  height: auto;
+  object-fit: contain;
+  margin-right: -90px;
+}
+
+/* Always text left, image right even on mobile */
+@media (max-width: 768px) {
+  .promo-banner {
+    padding: 10px 15px;
+  }
+
+  .text-section {
+    text-align: left;
+    margin-bottom: 10px;
+    margin-left: -80px;
+  }
+
+  .main-heading {
+    font-size: 24px;
+  }
+
+  .promo-image {
+    width: 400px !important;
+    margin-right: -210px;
+  }
+
+  .row {
+    flex-direction: row !important; /* Force image to stay right */
+  }
+}
+
+
+@media (max-width: 575px) {
+.promo-image {
+  width: 250px !important;
+  margin-right: -20px;
+}
+.text-section {
+  text-align: center;
+  margin-bottom: 10px;
+  margin-left: -20px;
+}
+
+
+
+}
+
+@media (max-width: 320px) {
+  .promo-image {
+    width: 250px !important;
+    margin-right: -30px;
+  }
+}
+
+/* brand offer */
+
+.brand-box {
+  background: none; /* Removed card background */
+  padding: 10px;
+}
+
+.brand-img {
+  width: 100%;
+  max-width: 250px;
+  height: auto;
+  object-fit: contain;
+}
+
+.brand-offers-title {
+  font-size: 20px;
+  color: #20CB01;
+  margin-bottom: 40px;
+  font-weight: bold;
+  /* background-image: url("../images/whystudysmart.png");  */
+  background-size: contain; 
+  background-repeat: no-repeat; 
+  background-position: right center; 
+}
+
+.brand-offers-title .highlight {
+  color: #070759; 
+}
+
+.brand-title {
+  font-size: 18px;
+  font-weight: 600;
+  color: #333;
+}
+
+/* Responsive tweaks */
+@media (max-width: 768px) {
+  .brand-img {
+    max-width: 180px;
+  }
+
+  .brand-title {
+    font-size: 16px;
+  }
+
+  .brand-offers-title {
+    margin-top: -35px;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,213 @@
+/* 
+.study-smart-section {
+  max-width: 1200px; 
+  margin: 0 auto;
+  text-align: center;
+  padding: 50px 20px;
+  background: #fff;
+}
+
+.study-smart-section .row {
+  justify-content: center;
+  gap: 20px; 
+}
+
+
+.study-smart-section .col-6 {
+  flex: 0 0 18%; 
+  max-width: 18%;
+}
+
+
+.study-smart-title {
+  font-size: 20px;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-bottom: 30px;
+  display: inline-block;
+  padding: 10px 30px;
+  
+  color: #6A6969;
+}
+
+
+.study-smart-title .highlight {
+  color: #170645; 
+}
+
+
+.study-smart-img {
+  width: 180px; 
+  height: auto;
+  margin-bottom: 10px;
+}
+
+
+.study-smart-section p {
+  font-size: 14px;
+  color: #333;
+  margin-top: 5px;
+  font-weight: bold;
+}
+
+
+
+
+@media (max-width: 1024px) {
+
+  .study-smart-img {
+    width: 160px; 
+    height: auto;
+    margin-bottom: 10px;
+  }
+
+
+}
+@media (max-width: 768px) {
+  .study-smart-title {
+    font-size: 1.5rem;
+    padding: 6px 16px;
+    background-size: 100% auto; 
+    background-position: right center; 
+    background-size: 60%; 
+  }
+  
+  .study-smart-img {
+    width: 60px;
+  }
+
+  .study-smart-section p {
+    font-size: 12px;
+  }
+  
+}
+
+@media (max-width: 480px) {
+  .study-smart-title {
+    background-position: right center; 
+    background-size: 50%; 
+    font-size: 1.5rem; 
+    padding: 8px 20px; 
+  }
+}
+
+
+ */
+
+
+
+
+
+
+ 
+.study-smart-section {
+  text-align: center;
+  padding: 60px 0;
+  background-color: white;
+}
+
+
+.study-smart-title {
+  font-size: 20px;
+  color: #20CB01;
+  margin-bottom: 40px;
+  font-weight: bold;
+  /* background-image: url("../images/whystudysmart.png");  */
+  background-size: contain; 
+  background-repeat: no-repeat; 
+  background-position: right center; 
+}
+
+.study-smart-title .highlight {
+  color: #070759; 
+}
+
+
+
+
+/* Carousel Container */
+.carousel-container {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  padding-bottom: 60px; 
+}
+
+
+.carousel-track {
+  display: flex;
+  gap: 20px; 
+  animation: scroll 20s linear infinite;
+}
+
+
+.carousel-card {
+  width: 400px; 
+  height: 160px;
+  background-size: cover;
+  background-position: center;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+  flex-shrink: 0;
+}
+
+/* Card Icon */
+.carousel-icon {
+  width: 100px;
+  height: 100px;
+}
+
+/* Card Text */
+.carousel-text {
+  max-width: 60%;
+  text-align: left;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+/* Keyframes for Continuous Scrolling */
+@keyframes scroll {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+
+
+/* Mobile-specific styles */
+@media (max-width: 768px) {
+  .carousel-track {
+    animation: scroll-mobile 30s linear infinite; /* faster scroll on mobile */
+  }
+
+  .carousel-card {
+    width: 180px;
+    height: 180px;
+  }
+
+  .carousel-icon {
+    width: 40px;
+    height: 40px;
+  }
+
+  .carousel-text {
+    font-size: 0.9rem;
+  }
+}
+
+/* Faster mobile scroll animation */
+@keyframes scroll-mobile {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+

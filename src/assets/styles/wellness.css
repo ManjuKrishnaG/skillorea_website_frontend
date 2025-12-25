@@ -1,0 +1,398 @@
+.wellness-section {
+  background-size: cover; /* Ensures the background image covers the section */
+  background-position: center; /* Centers the background */
+  background-repeat: no-repeat; 
+  max-height: 600px; 
+  display: flex;
+  align-items: center;
+  padding: 80px 0;
+  
+}
+
+.right-image {
+  max-width: 60%; /* Reduce size while keeping it responsive */
+  height: auto;
+  margin-top: 30px;
+  margin-bottom: -10px;
+}
+
+.top-image {
+  max-width: 60%;
+  height: auto;
+  margin-bottom: 20px;
+}
+
+
+.img-button {
+  cursor: pointer;
+  width: 150px;  /* Adjust size as needed */
+  height: auto;
+  transition: transform 0.2s ease-in-out;
+}
+
+.img-button:hover {
+  transform: scale(1.05); /* Slight zoom effect */
+}
+
+
+
+/* Responsive Fixes */
+
+@media (max-width: 575px) {
+
+  /* .top-image {
+    padding-top: 20px;
+    margin-bottom: -60px;
+  } */
+
+  .top-image {
+    margin-top: -20px;
+    margin-bottom: 20px; /* 🔁 Increase this value */
+  }
+
+  .text-content {
+    margin-top: 10px; /* 🔁 Add if needed */
+  }
+
+  
+
+}
+
+
+@media (max-width: 768px) {
+  .wellness-section {
+    background-position: center top;
+    margin-top: 40px;
+  }
+
+  .text-content {
+    text-align: center;
+    margin-top: 30px; 
+   }
+
+  .top-image {
+    max-width: 70%; 
+  }
+
+  .right-image {
+    max-width: 50%; 
+  }
+
+  .carousel-control-next-icon {
+    margin-left: 10px;
+}
+
+.enq-text{
+  text-align: justify;
+}
+
+  
+
+  
+}
+
+@media (max-width: 1024px) {
+  .wellness-section {
+    
+    margin-top: 60px;
+  }
+
+}
+
+/* card section */
+/* .row{
+  display: inline-flex;
+} */
+
+.category-card {
+  text-align: center;
+  transition: transform 0.3s ease-in-out;
+}
+
+.category-card:hover {
+  transform: scale(1.05);
+}
+
+.heading-icon {
+  color: orange;
+  margin-right: 5px;
+}
+
+.py-5 img {
+  transition: transform 0.3s ease-in-out;
+}
+
+.py-5 img:hover {
+  transform: scale(1.05);
+}
+
+.center-heading {
+  text-align: center;
+  color: #20CB01;
+}
+
+@media (max-width: 575px) {
+  .row{
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+
+}
+
+@media (max-width: 768px) {
+  .category-card img {
+    max-width: 80%;
+    margin: 0 auto;
+  }
+
+  .row.gx-3.gy-4 {
+    justify-content: center;
+  }
+}
+
+
+@media (max-width: 1024px) {
+  .row{
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+
+}
+
+@media (max-width: 991px) {
+  .text-content {
+    text-align: center !important;
+    align-items: center;
+  }
+
+  .text-content h2,
+  .text-content p {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .img-button {
+    display: block;
+    margin: 20px auto 0;
+  }
+}
+
+
+
+
+/* third section */
+
+.why-book-heading {
+  font-size: 28px;
+  display: flex;
+  align-items: center;
+  font-weight: bold;
+}
+
+.green-text {
+  color: #20CB01; /* Green */
+}
+
+.blue-text {
+  color: #070759; /* Dark Blue */
+}
+
+.why-book-section p {
+  color: #555; /* Grey text */
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+.btn-warning {
+  background-color: #FF8C00;
+  border: none;
+  font-size: 18px;
+  border-radius: 8px;
+  color: white;
+}
+
+.btn-warning:hover {
+  background-color: #e67e00;
+  color:white;
+}
+
+
+@media (max-width: 768px) {
+  .why-book-heading {
+    display: inline;
+    
+  }
+
+  .why-book-img {
+    
+    margin-bottom: 20px;
+  }
+}
+
+
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .why-book-img {
+    width: 300px !important;
+    height: auto !important;
+    margin-bottom: 20px;
+  }
+}
+
+
+
+
+
+/* card section */
+
+/* .search-book-play {
+  background-color: #ffffff; 
+}
+
+.wellnessstep-card {
+  background-color: #d3f2ff; 
+  border-radius: 12px;
+  padding: 30px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.step-icon {
+  width: 60px; 
+}
+
+.step-card h4 {
+  color: #222; 
+  font-size: 22px;
+}
+
+.step-card p {
+  color: #555; 
+  font-size: 16px;
+  line-height: 1.6;
+} */
+
+
+.search-book-play {
+  background-color: #ffffff; /* White background */
+}
+
+.wellnessstep-card {
+  background-color: #d3f2ff; /* Light Blue Background */
+  border-radius: 12px;
+  padding: 30px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  height: 100%; /* Ensure all cards have equal height */
+}
+
+.step-icon {
+  width: 60px; /* Adjust icon size */
+  display: block;
+  margin: 0 auto 1rem auto;
+}
+
+.wellnessstep-card h4 {
+  color: #222; /* Dark text for titles */
+  font-size: 22px;
+}
+
+.wellnessstep-card p {
+  color: #555; /* Slightly gray text */
+  font-size: 16px;
+  line-height: 1.6;
+  flex-grow: 1; /* Makes the paragraph take up remaining space */
+}
+
+/* Ensure all cards align properly in the row */
+/* @media (min-width: 768px) {
+  .row > div {
+    display: flex;
+  }
+} */
+
+
+
+
+
+/* book now */
+
+
+.rounded-card {
+  background: linear-gradient(90deg, #EFD5FF, #E1A4FF);
+  border-radius: 16px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  height: auto;
+}
+
+.book-now-img {
+  max-width: 60%;
+}
+
+.booknowbtn{
+  background-color: #070759;
+  color: white;
+}
+
+@media (max-width: 768px) {
+  .book-now-img {
+    max-width: 20%;
+  }
+
+  .rounded-card {
+    padding-top: 20px;
+  
+
+  }
+
+}
+
+@media (max-width: 575px) {
+  .book-now-img {
+    max-width: 50%;
+  }
+
+}
+
+
+
+
+
+/* Equal height card styling */
+.testimonial-card {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 30px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.testimonial-card p {
+  flex-grow: 1; /* Push button or end content to bottom */
+}
+
+
+
+
+.popup-message {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  background-color: #070759; /* green for success */
+  color: white;
+  padding: 12px 20px;
+  border-radius: 6px;
+  z-index: 9999;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  animation: fadeInOut 3s ease-in-out;
+}
+
+@keyframes fadeInOut {
+  0% { opacity: 0; transform: translateY(-10px); }
+  10% { opacity: 1; transform: translateY(0); }
+  90% { opacity: 1; }
+  100% { opacity: 0; transform: translateY(-10px); }
+}

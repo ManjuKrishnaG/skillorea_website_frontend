@@ -1,0 +1,86 @@
+/* Section Styling */
+.learning-section {
+  padding: 60px 20px;
+  background-color: #fff;
+  text-align: center;
+  /* max-width: 1200px; 
+  margin: 0 auto; */
+  
+}
+
+/* Heading */
+.learning-heading {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  margin-top: 50px;
+  display: inline-block;
+  /* padding: 10px 30px; */
+  background-image: url("../images/whystudysmart.png"); 
+  background-size: contain; 
+  background-repeat: no-repeat; 
+  background-position: right center;
+}
+
+.learninglight-text {
+  color: #20CB01; /* Color for the first part */
+}
+
+.dark-text {
+  color: #070759; /* Color for the second part */
+}
+
+.row {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 0 auto;
+}
+
+
+/* Card Styling */
+.card {
+  display: flex;
+  flex-direction: column;
+  height: 100%; /* Ensures all cards have equal height */
+}
+
+.card-img-top {
+  object-fit: cover; /* Ensures images fill the space without distortion */
+  height: 150px; /* Adjust as needed */
+}
+
+.card-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Centers text inside */
+  flex-grow: 1; /* Ensures text section takes equal space */
+}
+
+.card-text {
+  flex-grow: 1; /* Ensures text takes equal space in all cards */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+}
+
+
+
+
+@media (max-width: 768px) {
+  .container {
+    padding-left: 20px !important;
+    padding-right: 20px !important;
+  }
+
+  .learning-section {
+    margin-top: 0px;
+  }
+}
+
+
+
+
+
+

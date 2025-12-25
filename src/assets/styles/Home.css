@@ -1,0 +1,514 @@
+.homepage{
+  overflow-x: hidden;
+}
+
+.hero-section {
+  width: 100%;
+  min-height: 100vh;
+  background: url("../../assets/images/background.png") no-repeat center center;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 120px 10%;
+  text-align: left;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Rhombus Image */
+.rhombus-image {
+  position: absolute;
+  right: 0px; /* Sticks to the right end */
+  top: 50%;
+  transform: translateY(-50%) rotate(75deg); /* Adjust rotation */
+  z-index: 1; /* Behind the phone */
+  width: 50vw; /* Scales with screen */
+  max-width: 1200px;
+  opacity: 1; /* Ensure visibility */
+  left: -5px
+}
+
+/* Phone Image */
+.phone-image {
+  position: relative;
+  z-index: 2; /* Ensure it is above the rhombus */
+  max-width: 300px; /* Adjust size */
+}
+
+
+
+.orea-color {
+  color: #2CA008;
+}
+.ai-tutor-color {
+  color: #F48616;
+}
+
+
+
+/* Hero Content */
+.hero-content {
+  color: white;
+  max-width: 500px;
+}
+
+.hero-text-container {
+  position: relative; /* Allows absolute positioning for the image */
+  display: inline-block; /* Keeps text size dynamic */
+}
+
+
+@keyframes fadeInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.hero-title {
+  font-size: 34px;
+  font-weight: bold;
+  text-align: left;
+  position: relative;
+  z-index: 2;
+  margin-bottom: 30px;
+  opacity: 0; /* Start hidden */
+  animation: fadeInLeft 1.5s ease-out forwards;
+}
+
+.hero-subtitle {
+  font-size: 16px;
+  margin-top: 10px;
+  text-align: left;
+  opacity: 0;
+  animation: fadeInUp 1.5s ease-out forwards;
+  animation-delay: 0.5s; /* Delay after the title */
+}
+
+
+/* .hero-title {
+  font-size: 34px;
+  font-weight: bold;
+  text-align: left;
+  position: relative; 
+  z-index: 2; 
+  margin-bottom: 30px;
+}
+
+
+.hero-subtitle {
+  font-size: 16px;
+  margin-top: 10px;
+  text-align: left;
+} */
+
+.hi-image {
+  position: absolute;
+  top: -12%; /* Adjust to align above "Hi" */
+  left: -3%; /* Moves left to overlap "Hi" */
+  width: 5.5rem; /* Responsive size */
+  height: auto;
+  z-index: 1; /* Keeps image below the text */
+  opacity: 0; /* Initially hidden */
+  transform: translateY(20px); /* Moves image slightly down */
+  animation: fadeInUp 1s ease-out forwards, floatAnimation 3s infinite ease-in-out; /* Runs fade-in once, float repeats */
+}
+
+
+/* for image animation */
+@keyframes fadeInScale {
+  from {
+    opacity: 0;
+    transform: scale(0.8);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.hero-image-container {
+  opacity: 0; /* Initially hidden */
+  animation: fadeInScale 1.5s ease-out forwards;
+  transition: transform 0.3s ease; /* This keeps the hover effect */
+}
+
+/* Hover Effect (Keep This) */
+.hero-image-container:hover {
+  transform: scale(1.1);
+}
+
+
+
+/* Initial Fade-in Animation */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Hero Image */
+.hero-image-container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  max-width: 500px; /* Adjust based on design */
+  margin: auto;
+}
+
+.dotted-image {
+  position: absolute;
+  width: 350px; 
+  height: auto;
+  z-index: 0;
+  opacity: 2.7; 
+  animation: floatAnimation 3s infinite ease-in-out;
+}
+
+
+.top-dotted {
+  top: 5%;
+  right: -50%;
+  width: 280px; 
+}
+
+
+.bottom-dotted {
+  bottom: -5%;
+  left: -150%;
+  width: 180px; 
+}
+
+.hero-image {
+  max-width: 550px;
+  width: 100%;
+  height: auto;
+  z-index: 2;
+}
+
+/* Floating Images (Applies to all) */
+.floating-image {
+  position: absolute;
+  width: 80px; /* Adjust size */
+  height: auto;
+  z-index: 1;
+  animation: floatAnimation 2s infinite ease-in-out;
+}
+
+/* Hexagon Image */
+/* Specific Positioning */
+.hexagon-image {
+  top: -15%;
+  right: -10%;
+}
+
+.cloud-image {
+  top: -20%;
+  left: -10%;
+}
+
+.star-image {
+  bottom: -15%;
+  left: 20%;
+}
+
+.react-image {
+  bottom: -20%;
+  right: -5%;
+}
+
+.v-image {
+  top: 50%;
+  right: -20%;
+}
+
+
+/* Floating Animation */
+@keyframes floatAnimation {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+
+
+
+/* Store Buttons - Side by Side by Default */
+.hero-buttons {
+  display: flex;
+  justify-content: flex-start; /* Align to the left (desktop) */
+  gap: 15px;
+  margin-top: 20px;
+}
+
+/* Store Button Styling */
+.store-btn img {
+  width: 160px;
+  height: auto;
+  transition: transform 0.3s ease;
+}
+
+.store-btn img:hover {
+  transform: scale(1.1);
+}
+
+
+.hero-image-container {
+  transition: transform 0.3s ease;
+}
+
+.hero-image-container:hover {
+  transform: scale(1.1);
+}
+
+
+.whatsapp-btn img{
+  padding-top: 30px;
+}
+
+/* Responsive Styles */
+@media (min-width: 2560px) {
+  .rhombus-image {
+    position: absolute;
+    right: 0; /* Sticks to the right end */
+    top: 50%;
+    transform: translateY(-50%) rotate(75deg); /* Adjust rotation */
+    z-index: 1; /* Behind the phone */
+    width: 50vw; /* Scales with screen */
+    max-width: 1200px;
+    opacity: 1; /* Ensure visibility */
+    left: -5px;
+  }
+
+  .hero-image {
+    position: relative;
+    z-index: 2; /* Ensure it is above the rhombus */
+    max-width: 650px !important; 
+    width: 650px !important; 
+  }
+
+  .cloud-image{
+    top: -10px;
+  }
+
+  .hero-title{
+    font-size: 40px;
+    margin-bottom: 30px;
+  }
+
+  .hero-subtitle{
+    font-size: 20px;
+  }
+
+  .hero-image-container {
+    width: 100% !important;
+    max-width: 700px !important;
+  }
+
+}
+
+
+
+@media (max-width: 1024px) {
+  .hero-section {
+    flex-direction: column;
+    text-align: center;
+    padding: 140px 5% 50px;
+  }
+
+  .hero-title{
+    text-align: center;
+  }
+
+  .hero-subtitle{
+    text-align: center;
+  }
+
+  .hi-image{
+    margin-left: 80px;
+  }
+
+  .hero-content {
+    margin-bottom: 30px;
+    text-align: center;
+  }
+
+  .hero-image {
+    max-width: 450px;
+  }
+
+  /* Center Buttons and Stack Them */
+  .hero-buttons {
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .store-btn img {
+    width: 140px;
+  }
+
+  .dotted-image {
+    width: 130px; /* Adjust for tablets */
+  }
+  
+  .top-dotted {
+    top: 3%;
+    right: -8%;
+  }
+
+  .bottom-dotted {
+    bottom: -3%;
+    left: -8%;
+  }
+  
+}
+
+
+
+@media (max-width: 768px) {
+  
+
+  .hero-image {
+    max-width: 350px;
+  }
+
+  /* Further Adjust Button Layout for Smallest Screens */
+  .hero-buttons {
+    flex-direction: column; /* Stack buttons vertically */
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .store-btn img {
+    width: 130px;
+  }
+
+  .hero-title {
+    font-size: 2.5rem;
+    text-align: center;
+  }
+
+  .hero-subtitle {
+    font-size: 1.2rem;
+    text-align: center;
+  }
+
+  .hi-image {
+    width: 4.5rem; /* Smaller image for mobile */
+    top: -10%;
+    left: -2%;
+  }
+
+
+  .floating-image {
+    width: 60px;
+  }
+
+  .hexagon-image {
+    top: -10%;
+    right: -5%;
+  }
+
+  .cloud-image {
+    top: -15%;
+    left: -5%;
+  }
+
+  .star-image {
+    bottom: -15%;
+    left: 15%;
+  }
+
+  .react-image {
+    bottom: -15%;
+    right: -3%;
+  }
+
+  .v-image {
+    top: 5%;
+    left: 35%;
+  }
+
+  .dotted-image {
+    width: 100px; /* Adjust for mobile */
+  }
+
+  .top-dotted {
+    top: 2%;
+    right: -5%;
+  }
+
+  .bottom-dotted {
+    bottom: -2%;
+    left: -5%;
+  }
+
+  
+}
+
+
+/* @media (max-width: 575px) {
+.hi-image {
+  width: 4.5rem; 
+  top: -8%;
+  
+  left: -19%;
+}
+} */
+
+@media (min-width: 375px) and  (max-width: 467px){
+  .hi-image {
+    left: -24%;
+    top: -5%;
+  }
+
+
+}
+
+@media (min-width: 425px) and  (max-width: 467px){
+  .hi-image {
+    left: -15%;
+  }
+
+
+}
+
+@media (max-width: 768px) and  (min-width: 467px){
+  .hi-image {
+    left: -1%;
+  }
+}
+
+
